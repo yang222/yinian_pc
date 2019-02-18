@@ -39,9 +39,26 @@
     height: 100%;
     color: #fff;
 }
-
-
-
+.header .nav li span {
+    display: inline-block;
+    width: 0.72rem;
+    height: 0.48rem;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 0.48rem;
+}
+.header .nav li span.yx{
+    background: #fff;
+    
+}
+.header .nav li span.yx a{
+    color: #000;
+}
+@media (max-width: 1040px){
+   .header .nav li {
+       display: none;
+   }
+}
 /* 教育套件页面 */
 .ed_top{
     width:100%;
@@ -49,3 +66,8 @@
     background: url("./../images/ed_top.png") no-repeat center center;
     background-size: cover;
 }
+.ed_top .ed1_txt {
+    text-align: center;
+    padding-top: 2rem;
+}
+.ed_top .ed1_txt h3{ font-size: 1rem; color:#28a7e1 }
