@@ -1,0 +1,51 @@
+.header{
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+}
+.header .logo{
+    float: left;
+    height: 2rem;
+    width: 4rem;
+}
+.header .logo a{
+    display: block;
+    text-indent: -10000000px;
+    background: url("./../images/logo.png") no-repeat center center;
+    background-size: 2.7rem 1.1rem;
+}
+.header .nav{
+    float: right;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0;
+}
+.header .nav li{
+    display: inline-block;
+    vertical-align: top;
+    height: 1rem;
+    font-size: 0.28rem;
+    margin: 0 0.2rem;
+    margin-top: 0.5rem;
+    line-height: 1rem;
+    box-sizing: border-box;
+}
+.header .nav li.active{
+    border-bottom: 3px solid #fff
+}
+.header .nav li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+
+
+/* 教育套件页面 */
+.ed_top{
+    width:100%;
+    height: 15rem;
+    background: url("./../images/ed_top.png") no-repeat center center;
+    background-size: cover;
+}
