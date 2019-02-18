@@ -126,7 +126,7 @@ table {
   border-collapse:collapse;
   border-spacing:0;
 }
-@media (max-width: 414px){
+/* @media (max-width: 414px){
     html { font-size: 55.2px;}
 }
 @media (max-width: 375px){
@@ -137,8 +137,19 @@ table {
 }
 @media (max-width: 320px){
     html { font-size: 42.6px;}
+} */
+@media (max-width: 414px){
+  html { font-size: 23px;}
 }
-
+@media (max-width: 375px){
+  html { font-size: 25px;}
+}
+@media (max-width: 360px){
+  html { font-size: 24px;}
+}
+@media (max-width: 320px){
+  html { font-size: 20px;}
+}
 @media screen and (min-width: 414px) {
     html {
        font-size: 55.2px;

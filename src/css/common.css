@@ -65,9 +65,16 @@
     height: 15rem;
     background: url("./../images/ed_top.png") no-repeat center center;
     background-size: cover;
+    margin-bottom: 0.8rem;
 }
 .ed_top .ed1_txt {
     text-align: center;
     padding-top: 2rem;
 }
-.ed_top .ed1_txt h3{ font-size: 1rem; color:#28a7e1 }
+.ed_top .ed1_txt h3{ font-size: 1rem; color:#28a7e1;margin-bottom: 1.8rem;}
+.ed_top .ed1_txt h4{ font-size: 0.64rem; color:#fff;margin-bottom: 0.2rem;}
+.ed_top .ed1_txt p{ font-size: 0.28rem; color:#fff;margin-bottom: 0.1rem;}
+.ed2{width: 100%;box-sizing: border-box;padding: 1rem;font-size: 0;}
+.ed2 .ed2_left{display: inline-block;width: 45%;margin-right: 10%;height: 18rem;
+}
+.ed2 .ed2_right{display: inline-block;width: 45%;height: 18rem;}
