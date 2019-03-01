@@ -384,9 +384,70 @@
                             </div>
                     </div>
                 </div>
-                <!-- <div class="swiper-slide">
-                    
-                </div> -->
+                <div class="swiper-slide" id="isShow" style="display: none;"> 
+                    <div class="foot" id="foot">
+                        <div class="foot_top">
+                            <div class="foot_left">
+                                <div class="logo">
+                                    <img src="./../src/images/logo.png" alt="">
+                                </div>
+                                <p class="text"><span>电话：</span> +86-0755-86667894</p>
+                                <p class="text"><span>邮箱：</span> publicmedia@neu-flex.com</p>
+                                <p class="text"><span>地址：</span> 深圳市南山区科技园高新中三道
+                                        二号深圳软件园5栋210</p>
+                            </div>
+                            <div class="foot_center">
+                                <ul>
+                                    <li>
+                                        <h4><a href="./index.html">首页</a></h4>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:;">产品列表</a></h4>
+                                        <a href="./psyche.html">PSYCHE ZERO</a>
+                                        <a href="./mercury.html">MERCURY</a>
+                                    </li>
+                                    <li>
+                                        <h4><a href="./problem.html">客服</a></h4>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:;">媒体资讯</a></h4>
+                                        <a href="./news.html">新闻动态</a>
+                                        <a href="javascript:;">媒体报道</a>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:;">关于公司</a></h4>
+                                        <a href="./company_into.html">公司介绍</a>
+                                        <a href="./contact.html">联系我们</a>
+                                        <a href="./join_us.html">加入我们</a>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:;">论坛</a></h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="foot_right">
+                                <ul>
+                                    <li class="wx ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0s"> 
+                                        <img src="./../src/images/wx.png" alt="微信公众号">
+                                        <p class="text">微信公众号</p>
+                                    </li>
+                                    <li class="wb ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.5s"> 
+                                        <img src="./../src/images/wb.png" alt="微信公众号">
+                                        <p class="text">微博二维码</p>
+                                    </li>
+                                    <li class="tt ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s"> 
+                                        <img src="./../src/images/tt.png" alt="微信公众号">
+                                        <p class="text">头条号</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="foot_b">
+                            <p class="b1">Copyright Neural FLEX 粤ICP备18060473号</p>
+                            <p class="b2">本站部分图片转自网络，&nbsp;&nbsp;如有侵权，&nbsp;&nbsp;请联系网站客服删除，&nbsp;&nbsp;谢谢！</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
         </div>
@@ -396,7 +457,9 @@
 <script>
     if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
        var  pageSize = 3
+       $("#isShow").css("display","block")
     }else{
+        $("#isShow").css("display","none")
        var  pageSize = 4;
     }
     var swiper = new Swiper('.swiper-container', {
