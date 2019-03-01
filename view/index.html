@@ -394,6 +394,11 @@
 
 </body>
 <script>
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+       var  pageSize = 3
+    }else{
+       var  pageSize = 4;
+    }
     var swiper = new Swiper('.swiper-container', {
         pagination: {
             el: '.swiper-pagination',
@@ -493,7 +498,7 @@
                 url:config.url+"New/lists",
                 type:"GET",
                 data:{
-                    pageSize:4,
+                    pageSize:pageSize,
                     page:1,
                     type:0,
                     random:new Date().getTime()
