@@ -205,65 +205,74 @@
             getData(type)
         }
         function getData(type){
-            $.ajax({
-                url:config.url+"New/lists",
-                type:"GET",
-                data:{
-                    pageSize:5,
-                    page:pages,
-                    type:type,
-                    random:new Date().getTime()
-                },
-                dataType:"json",
-                success:function(data){
-                    $("#news_data").html("");
-                    if(data.status == 200){
-                        if(data.data.length > 0){
-                            for(var i = 0;i<data.data.length;i++){
-                                var html = '<li><div class="img"> <img src="'+(data.data[i].image_url==""||data.data[i].image_url==null ?'':data.data[i].image_url[0].url)+'" alt=""></div>'+
-                                '<div class="l_cont"> <h5>'+data.data[i].title+'</h5>'+
-                                    '<span>发布时间：'+data.data[i].date+'      发布人：'+data.data[i].author+'</span>'+
-                                    '<p>'+data.data[i].about+'</p>'+
-                                    '<a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'" class="toread">阅读全文</a>'+
-                                '</div></li>'
-                                $("#news_data").append(html)
+            try{
+                $.ajax({
+                    url:config.url+"New/lists",
+                    type:"GET",
+                    data:{
+                        pageSize:5,
+                        page:pages,
+                        type:type,
+                        random:new Date().getTime()
+                    },
+                    dataType:"json",
+                    success:function(data){
+                        $("#news_data").html("");
+                        if(data.status == 200){
+                            if(data.data.length > 0){
+                                for(var i = 0;i<data.data.length;i++){
+                                    var html = '<li><div class="img"> <img src="'+(data.data[i].image_url==""||data.data[i].image_url==null ?'':data.data[i].image_url[0].url)+'" alt=""></div>'+
+                                    '<div class="l_cont"> <h5>'+data.data[i].title+'</h5>'+
+                                        '<span>发布时间：'+data.data[i].date+'      发布人：'+data.data[i].author+'</span>'+
+                                        '<p>'+data.data[i].about+'</p>'+
+                                        '<a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'" class="toread">阅读全文</a>'+
+                                    '</div></li>'
+                                    $("#news_data").append(html)
+                                }
+                                $("#page").initPage(Number(data.totalNum),pages,change);
+                            }else{
+                                $("#news_data").html("<li style='color:#666;font-size:0.36rem;text-align:center;border:none;'>暂无数据！</li>")
                             }
-                            $("#page").initPage(Number(data.totalNum),pages,change);
-                        }else{
-                            $("#news_data").html("<li style='color:#666;font-size:0.36rem;text-align:center;border:none;'>暂无数据！</li>")
+                            
                         }
-                        
                     }
-                }
-            })   
+                })   
+            }catch(err){
+
+            }
+            
         }
         function getList(type){
-            $.ajax({
-                url:config.url+"New/lists",
-                type:"GET",
-                data:{
-                    pageSize:5,
-                    page:pages,
-                    type:type,
-                    random:new Date().getTime()
-                },
-                dataType:"json",
-                success:function(data){
-                    $("#news_list").html("");
-                    if(data.status == 200){
-                        if(data.data.length > 0){
-                            var html = '<h6>'+(type==1?"行业动态":"易念动态")+'</h6><ul>'
-                            for(var i = 0;i<data.data.length;i++){
-                               
-                                html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].title+'</a></li>'
+            try{
+                $.ajax({
+                    url:config.url+"New/lists",
+                    type:"GET",
+                    data:{
+                        pageSize:5,
+                        page:pages,
+                        type:type,
+                        random:new Date().getTime()
+                    },
+                    dataType:"json",
+                    success:function(data){
+                        $("#news_list").html("");
+                        if(data.status == 200){
+                            if(data.data.length > 0){
+                                var html = '<h6>'+(type==1?"行业动态":"易念动态")+'</h6><ul>'
+                                for(var i = 0;i<data.data.length;i++){
+                                
+                                    html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].title+'</a></li>'
+                                }
+                                html+='</ul>'
                             }
-                            html+='</ul>'
+                            $("#news_list").html(html);
                         }
-                        $("#news_list").html(html);
+                    
                     }
-                   
-                }
-            })   
+                })  
+            }catch(err){
+
+            }
         }
         getData(type)
         getList(type==1?2:1);
