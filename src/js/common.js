@@ -1,6 +1,6 @@
 var config={
-    url:"http://www.yinian.com:8080/Admin/"
-    // url:"http://106.15.229.159:9001/Admin/"
+    // url:"http://www.yinian.com:8080/Admin/"
+    url:"http://106.15.229.159:9001/Admin/"
 }
 $(function(){
     $(".header .sq").click(function(){
@@ -20,15 +20,18 @@ $(function(){
             
         }
     })
-    $(".header li.cp").click(function(){
-        $(".header .nav").css("height","auto")
-        if($(this).hasClass("open")){
-            $(this).removeClass("open")
-            $(this).find(".child_nav").css("height",0)
-        }else{
-            $(this).addClass("open")
-        }
-    })
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        $(".header li.cp").click(function(){
+            $(".header .nav").css("height","auto")
+            if($(this).hasClass("open")){
+                $(this).removeClass("open")
+                $(this).find(".child_nav").css("height",0)
+            }else{
+                $(this).addClass("open")
+            }
+        })
+    }   
+    
 })
 
 //获取url参数

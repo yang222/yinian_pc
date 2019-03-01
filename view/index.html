@@ -11,6 +11,7 @@
     <title>易念科技</title>
     <script src="./../src/js/swiper.min.js"></script>
     <script src="../src/js/jquery-1.9.1.min.js"></script>
+    <script src="../src/js/jquery.mousewheel.min.js"></script>
     <script src="../src/js/common.js"></script>
     <script src="./../src/js/swiper.animate1.0.3.min.js"></script>
     <link rel="stylesheet" href="../src/css/swiper.min.css">
@@ -190,7 +191,7 @@
                             <h4 class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">使用MERCURY操控你的玩具</h4>
                             <h5 class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s">STEM教育全新概念，帮助孩子提升学习效率，体验科技带来的乐趣</h5>
                             <h6 class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.7s">易念科技STEM套件包含：</h6>
-                            <p class="color ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.7s">脑电波头箍+《脑力魔方》APP</p>
+                            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.7s">脑电波头箍+《脑力魔方》APP</p>
                             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.7s">脑电波头箍+智能竞速小汽车</p>
                             <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.7s">肌电臂环+机械臂</p>
                             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.7s">肌电臂环+智能迷你无人机</p>
@@ -347,7 +348,7 @@
                                             <li>
                                                 <h4><a href="javascript:;">媒体资讯</a></h4>
                                                 <a href="./news.html">新闻动态</a>
-                                                <a href="javascript:;">媒体报道</a>
+                                                <a href="./news.html">媒体报道</a>
                                             </li>
                                             <li>
                                                 <h4><a href="javascript:;">关于公司</a></h4>
@@ -412,7 +413,7 @@
                                     <li>
                                         <h4><a href="javascript:;">媒体资讯</a></h4>
                                         <a href="./news.html">新闻动态</a>
-                                        <a href="javascript:;">媒体报道</a>
+                                        <a href="./news.html">媒体报道</a>
                                     </li>
                                     <li>
                                         <h4><a href="javascript:;">关于公司</a></h4>
@@ -491,33 +492,66 @@
             slideChangeTransitionEnd: function(){ 
                 swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
                 //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+                if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                    if(this.activeIndex == 7){
+                        $("#index_jt").fadeOut();
+                    }
+
+                }else {
+                    if(this.activeIndex == 6){
+                        $("#index_jt").fadeOut();
+                    }
+                }
                 if(this.activeIndex == 6){
-                    $("#index_jt").fadeOut();
                     var a = 0;
                     setTimeout(function(){
-                        $(document).bind("mousewheel DOMMouseScroll", function (e) {       
+                        $(document).bind("mousewheel DOMMouseScroll", function (e) {     
+                           
                             var delta = (e.originalEvent.wheelDelta && (e.originalEvent.wheelDelta > 0 ? 1 : -1)) ||  // chrome & ie
                                         (e.originalEvent.detail && (e.originalEvent.detail > 0 ? -1 : 1));              // firefox
-                            if (delta > 0) {
-                                if(a > 0){
-                                    $("#cont_top").animate({top:'0'});
-                                    $("#foot").animate({bottom:'-10rem'});
-                                    // swiper.slideTo(6,200,false)
-                                    setTimeout(function(){
-                                        swiper.allowSlidePrev = true;
-                                    },1000)
-                                    a = 0;
+
+                            if(!!window.ActiveXObject || "ActiveXObject" in window){
+                                console.log(e.deltaY)
+                                if(e.deltaY == 1){
+                                    if(a > 0){
+                                        $("#cont_top").animate({top:'0'});
+                                        $("#foot").animate({bottom:'-10rem'});
+                                        // swiper.slideTo(6,200,false)
+                                        setTimeout(function(){
+                                            swiper.allowSlidePrev = true;
+                                        },1000)
+                                        a = 0;
+                                    }else{
+                                    } 
                                 }else{
-                                } 
-                            } else {
-                                a++;
-                                $("#cont_top").animate({top:'-10rem'});
-                                $("#foot").animate({bottom:'0'});
-                                swiper.allowSlidePrev = false;
-                                // console.log('向下滚动');
+                                    a++;
+                                    $("#cont_top").animate({top:'-10rem'});
+                                    $("#foot").animate({bottom:'0'});
+                                    swiper.allowSlidePrev = false;
+                                    // console.log('向下滚动');
+                                }
+                            }else{
+                                if (delta > 0) {
+                                    if(a > 0){
+                                        $("#cont_top").animate({top:'0'});
+                                        $("#foot").animate({bottom:'-10rem'});
+                                        // swiper.slideTo(6,200,false)
+                                        setTimeout(function(){
+                                            swiper.allowSlidePrev = true;
+                                        },1000)
+                                        a = 0;
+                                    }else{
+                                    } 
+                                } else {
+                                    a++;
+                                    $("#cont_top").animate({top:'-10rem'});
+                                    $("#foot").animate({bottom:'0'});
+                                    swiper.allowSlidePrev = false;
+                                    // console.log('向下滚动');
+                                }
+                                return false;
                             }
-                            return false;
-                            
+                                            
                         })
                     },1000)
                     
@@ -528,7 +562,6 @@
             } 
         },
     }) 
-    
     var swiper2 = new Swiper('.swiper-container1', {
         navigation: {
             nextEl: '.swiper-button-next',

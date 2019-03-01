@@ -1,4 +1,5 @@
 body{text-align: center;}
+.swiper-pagination-bullet{background: #28a7e1;}
 .header{
     width: 100%;
     height: 1.5rem;
@@ -50,10 +51,10 @@ body{text-align: center;}
     transition: all 0.5s;
 }
 .header .nav li .child_nav{height: 0; overflow: hidden;transition: all 0.5s;}
-.header .nav li .child_nav a{height: 0.7rem !important;line-height: 0.7rem;}
+.header .nav li .child_nav a{height: 0.7rem !important;line-height: 0.7rem;width: 100%;}
 .header .nav li.open .child_nav{height: 1.4rem !important;}
 .header .nav li.open .child_nav a{height: 0.7rem !important;}
-/* .header .nav .cp:hover .child_nav{height:2rem;} */
+.header .nav .cp:hover .child_nav{height:2rem;}
 .header .nav .fangan:hover .child_nav{height:2rem;}
 .header .nav li a:hover{color: #11a0ea;}
 .header .nav li a img{
@@ -382,8 +383,7 @@ body {
 .index .index5 .index_cont ul li .detail{transition: all 0.5s;display: inline-block;width: 2rem; height: 0.6rem;border: 1px solid #aaa;color: #666;font-size: 0.26rem;line-height: 0.6rem;text-align: center;}
 .index .index6{background-image: url("./../images/index/bg6.png")}
 .index .index6 .index_cont ul li{width: 4rem;margin: 0;background: rgba(0, 0, 0, 0);margin: 0 0.2rem; height: 8rem;}
-.index .index6 .index_cont ul li:hover{margin: 0;}
-.index .index6 .index_cont ul li.hover:hover{width: 7rem;}
+
 .index .index6 .index_cont ul li .img{width: 4rem;height: 4rem; padding: 0.5rem;padding-top:1.3rem; box-sizing: border-box;text-align: center;font-size: 0.42rem;color: #000;
 background: url("./../images/index/box.png") no-repeat center center;background-size: 100% 100%;
 }
@@ -540,6 +540,10 @@ background: url("./../images/index/box.png") no-repeat center center;background-
 }
 .ed4 .ed4_1 {padding: 0.3rem;box-sizing: border-box;background: url("./../images/ed4_1.png")no-repeat center center;background-size: 100% 100%; }
 .ed4 .ed4_1 .ed4_cont{width: 100%;height: 100%; background: rgba(255, 255, 255, 0.7)}
+.ed4 .ed4_2,.ed4 .ed4_3,.ed4 .ed4_1 {position: relative;}
+.ed4 .ed4_2 .ed4_text,.ed4 .ed4_3 .ed4_text,.ed4 .ed4_1 .ed4_text{position: absolute;top: 2.5%;left: 2.5%;width: 95%;height: 95%;background: rgba(255,255,255,0.7)}
+.ed4 .ed4_2 .ed4_text h5,.ed4 .ed4_3 .ed4_text h5,.ed4 .ed4_1 .ed4_text h5{font-size:0.5rem;padding: 3rem 0 1rem;color: #000}
+.ed4 .ed4_2 .ed4_text p,.ed4 .ed4_3 .ed4_text p,.ed4 .ed4_1 .ed4_text p{font-size:0.3rem;padding:0 0.5rem;color: #000}
 .ed4 .ed4_1 h3 {
     padding: 3rem 0 1rem;
     font-size: 0.5rem;
@@ -739,18 +743,20 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 }
 
 /* 联系我们页面 */
-.contact{height: 100%;}
-.contact .contact_cont{text-align: left; padding-top:2rem; box-sizing:border-box; width: 100%; height: 100%;font-size: 0; background: url("../images/contact/i6rq318wut.png") no-repeat center center;background-size: 100% 100%;}
+.contact{background: url("../images/contact/i6rq318wut.png") repeat center center;background-size: cover; min-height: 100%;}
+.contact .contact_cont{text-align: left; padding-top:2rem; box-sizing:border-box; width: 100%;font-size: 0; }
 .contact .contact_cont .c_left{
     display: inline-block;
     width: 30%;
+    height: 18rem;
     vertical-align: top;
 }
+
 .contact .contact_cont .c_left .title{color: #fff;font-size: 0.56rem;padding:0.6rem 1.4rem;}
 .contact .contact_cont .c_left .func{padding: 0 1.4rem;color: #fff;font-size: 0.32rem;}
 .contact .contact_cont .c_left .func h6{color: #11a0ea; margin-bottom: 0.3rem;}
 .contact .contact_cont .c_left .func p{margin-bottom: 0.3rem;line-height: 0.36rem;}
-.contact .contact_cont .c_right {display: inline-block;width: 70%;height: 100%;background: #fff;}
+.contact .contact_cont .c_right {display: inline-block;width: 70%;height: 100%;background: #fff;height: 18rem;}
 @media (max-width: 800px){
     .contact .contact_cont .c_right{width: 100%;}
     .contact .contact_cont .c_left{width: 100%;}
@@ -919,7 +925,8 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
     line-height: 0.6rem;
     text-align: center;
 }
-.english .cj .box{width: 100%;height: 100%;position: absolute;}
+.english .cj .box{width: 100%;height: 100%;position: absolute;top:0;left: 0;}
+.english .cj .swiper-slide{position: relative;}
 .english .cj .box .cont{width: 95%;height: 95%; position: absolute;top: 2.5%;left: 2.5%;text-align: center;background: rgba(255, 255, 255, 0.7)}
 .english .cj .box .cont h5{padding-top: 2rem;color: #000;font-size: 0.32rem;}
 .english .cj .box .cont p{padding:0.2rem 1rem 0.3rem;color: #000;font-size: 0.24rem;line-height: 0.5rem;}
