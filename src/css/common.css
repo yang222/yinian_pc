@@ -214,7 +214,7 @@ body{text-align: center;}
 .foot .foot_b .b2{font-size: 0.28rem;color: #afafaf}
 @media (max-width: 800px){
     .foot{
-        height: 100%;
+        height: 25rem;
     }
     .foot .foot_top li{
         width: 100%;
@@ -394,7 +394,7 @@ background: url("./../images/index/box.png") no-repeat center center;background-
 .index .banner2 .ban_cont h6 span{display: inline-block;vertical-align: middle;width: 40px;height: 1px; background: #fff;margin: 0 0.2rem}
 .index .banner2 .ban_cont h5 {font-size: 1.2rem; padding: 0.8rem 0 0.7rem;font-weight: 600;}
 .index .banner2 .ban_cont  .text{display: inline-block;  width: auto;margin-bottom: 1rem; padding:  0.2rem 1rem;border: 1px solid #fff;border-radius: 0.1rem; font-size: 0.36rem; color: #fff;}
-.index .banner2 .ban_cont .shop{color: #11a0ea;font-size: 0.48rem;display: block; width: 3rem;margin: 0 auto; opacity: 0.7;}
+.index .banner2 .ban_cont .shop{color: #11a0ea;font-size: 0.48rem;display: block; width: 4rem;margin: 0 auto; opacity: 0.7;}
 .index .banner2 .ban_cont .shop:hover{opacity: 1;}
 .index .b_tit {font-size: 0.6rem; color: #fff;font-weight: 600;margin-bottom: 0.3rem;}
 .index .banner5 .ban_cont{position: absolute; width: auto; top: 50%; left: 15%;transform: translateY(-50%); color: #fff; text-align: center;}
@@ -431,12 +431,12 @@ background: url("./../images/index/box.png") no-repeat center center;background-
 .index .banner4 .ban_cont  .zy .left{float: left; text-align:left; margin-left: 3rem;line-height: 0.6rem;}
 .index .banner4 .ban_cont  .zy .right{float: right; line-height: 1.2rem; width: 4.5rem;background: #b4b55f;}
 @media (max-width: 800px){
-    .index .index1 .index_cont{margin: 0 auto;text-align: center; margin-top: 50%;padding: 0;}
+    .index .index1 .index_cont{margin: 0 auto;text-align: center; margin-top:-1.75rem;padding: 0; width: auto;padding:0 1rem; }
     .header .logo{margin-top: 0.2rem;}
     .index .index1 .index_cont h5{padding-top: 0.6rem;}
     .index .index6 .index_cont ul li.opacity{display: none;}
     .index .index6 .index_cont ul li.hover{width: 40%; margin-bottom: 0.4rem;height: 8rem;}
-    .index .index4 .index_cont ul {padding:0 0.2rem;}
+    .index .index4 .index_cont ul {padding:0 0.2rem;padding-top: 1rem;}
     .index .index4 .index_cont ul li {width: 100%;height:6rem;margin-bottom: 0.4rem;margin-left: 0;position: relative;}
     .index .index4 .index_cont ul li img{width: 100%; height: 100%;}
     .index .index4 .index_cont ul li .img{width: 100%; height: 100%;}
@@ -448,14 +448,16 @@ background: url("./../images/index/box.png") no-repeat center center;background-
     .index .index5 .index_cont ul li .news_cont{height: auto;padding: 0.1rem 0;}
     .index .index5 .index_cont ul li .news_cont p{-webkit-line-clamp:2;line-clamp: 2;height: 1.4rem;}
     .index .index5 .index_cont ul li h4{-webkit-line-clamp:1;line-clamp: 1;height: 0.8rem;}
-    .index .index5 .index_cont .title{padding: 0.1rem 0 0.1rem;}
+    .index .index5 .index_cont .title{padding: 0.1rem 0 0.1rem;padding-top: 3rem !important;}
     .index .index5 .index_cont ul li span{margin-bottom: 0.1rem;}
+    .index .index5 .index_cont ul li .detail{width: 3rem;}
     .index .index5 .foot{display:none;}
     .index .banner2 .ban_cont h5{width: 10rem;}
     .index .banner2 .ban_cont{right: 50%;    transform: translate(50%,-50%);}
+    .index .banner3 .ban_cont .img{height: 0.8rem;}
     .index .banner4 .ban_cont .img{width: 13rem;}
     .index .banner4 .ban_cont .zy{width: 13rem;}
-    .index .banner4 .ban_cont .zy .left{margin-left: 2rem;}
+    .index .banner4 .ban_cont .zy .left{margin-left: 1rem;}
     .index .banner5 .ban_cont .text{width: 12rem;}
     .index .banner5 .ban_cont .text{height: 1.5rem;line-height: 1rem;}
     .index .banner5 ul li{width: 2.3rem; height: 2.3rem;}
@@ -689,7 +691,7 @@ background: url("./../images/index/box.png") no-repeat center center;background-
     .problem .problem_cont .problem_list{padding: 0 0.4rem;box-sizing: border-box;}
     /* .page{padding-top: 0;} */
     .join_us .want_you .zp_cont>li{height: 1.2rem;}
-    .join_us .want_you{height: 18rem;}
+    .join_us .want_you{height: 22rem;}
     .join_us .we_do .zp_cont>li{width: 90%;}
  }
 
@@ -861,6 +863,7 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 }
 @media (max-width: 800px){
     .download .load_cont .down a{display: block; margin: 0 auto;margin-bottom: 0.5rem;}
+    .download .load_cont .text{padding:5rem 1rem 0;}
 }
 
 
@@ -879,7 +882,7 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 .shop .shop_cont .s_cont .det .btn{padding-top: 0.6rem}
 .shop .shop_cont .s_cont .det .btn a{margin-right:0.6rem; display: inline-block;padding: 0.2rem 0.6rem;color: #fff;background: #df3033;border-radius: 0.2rem;font-size: 0.32rem;}
 @media(max-width:600px){
-    .shop .shop_cont .s_cont .img {width: 90%;}
+    .shop .shop_cont .s_cont .img {width: 90%;height: 10rem;}
     .shop .shop_cont .s_cont .det{width: 90%;}
 }
 /* 少儿英语在线 */
@@ -1112,16 +1115,17 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 .company4 .img h5{background: #11a0ea;}
 .company4 .text .t_cont{background: #000}
 @media (max-width: 800px){
-    .company3 .img h5 {margin-top: 6rem;line-height: 10rem;}
-    .company3 .text .t_cont{margin-top: 6rem;}
+    .company3 .img h5 {height: 4rem;margin-top: 2rem;line-height: 4rem;}
+    .company3 .text .t_cont{height: 4rem;margin-top: 2rem;}
     .company2{padding: 0;}
-    .company2 .c_left{padding-top: 2.5rem;}
+    .company2 .c_left{padding-top: 0rem;}
+    .company3 .img, .company3 .text{height: 8rem;}
     .company2 .c_left,.company2 .center,.company2 .c_right{width:100%;margin-top: 0;}
     .company2 .center{width: 70%;height: 6rem;margin: 1rem 0;}
     .company2 .center div{width: 100%;height: 100%;line-height: 6rem; writing-mode: rl-tb;padding: 0;}
-    .company2 .c_left div,.company2 .c_right div{display: inline-block; width: 7rem;vertical-align: top;height: 7.5rem;}
+    .company2 .c_left div,.company2 .c_right div{display: inline-block; width: 8rem;vertical-align: top;height: 8rem;}
     .company2 h5{margin-right: 0.6rem;font-weight: 600;}
-    .company2 p{margin-right: 0.5rem}
+    .company2 p{margin-right: 0.2rem;width: auto;font-size: 0.22rem;}
     .company2 .c_left .left_bottom{background-image: url("./../images/company_inro/img4.png");margin: 0;padding-left: 2.5rem;margin-left: 0.3rem;}
     .company2 .c_right .right_bottom{background-image: url("./../images/company_inro/img6.png");margin: 0;padding-left: 2.2rem;margin-left: 0.3rem;}
     .company2 .c_right .right_top{background-image: url("./../images/company_inro/img5.png");margin: 0;padding-left: 0.5rem;}
@@ -1472,9 +1476,9 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .psyche .psyche11 .cont_with ul li .file_cont{transition: all 0.5s; position: absolute;bottom: -1.5rem; left: 0;width: 100%;height:1.5rem;box-sizing: border-box;padding: 0.1rem 0.2rem;font-size: 0.26rem;color:#fff;text-align: center;background: rgba(0, 0, 0, 0.7);}
 .psyche .psyche11 .cont_with ul li:hover .file_cont{bottom: 0rem;}
 @media (max-width: 800px){
-    .psyche .psyche1 .ed1_txt{width: 100%;}
+    .psyche .psyche1 .ed1_txt{width: 100%;left: 50%;transform: translate(-50%,-50%)}
     .psyche .psyche2 .ed1_txt{width: 100%;}
-    .psyche .psyche2{background-size:100% 100% }
+    .psyche .psyche2{background-size:cover }
     .psyche .mercury4 .img {width: 45%;margin-top: 0;}
     .psyche .psyche4 .psyche4_img h5{top:0;font-size: 0.5rem;font-weight: 600;}
     .psyche .psyche4 .psyche4_img p{top: 40%;padding: 0 0.4rem;width: auto;}
@@ -1485,7 +1489,6 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
     .psyche .psyche6 .ed1_txt .td{padding-left: 1.4rem;}
     .psyche .psyche6 .ed1_txt .td div{width: 80%;}
     .psyche .psyche6 .ed1_txt .td li{height: 2rem;}
-    .psyche .mercury4 .img:first-child{margin-top: 2.5rem;}
     .psyche .mercury4 .img:first-child{margin-top: 2.5rem;}
     .psyche .psyche10 .ed1_txt{padding-left: 1rem;padding-top: 3rem; left: 40% !important;padding-left: 0 !important;}
     .psyche .psyche3 .title{padding-top: 30%;font-size: 0.52rem;}
