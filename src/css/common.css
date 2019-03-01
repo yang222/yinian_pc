@@ -555,7 +555,7 @@ background: url("./../images/index/box.png") no-repeat center center;background-
     .ed_top p{padding: 0 0.4rem;}
     .ed2 .ed2_left{width: 100%;margin-bottom: 0.4rem;}
     .ed2 .ed2_right{width: 100%;margin-bottom: 0.4rem;height: 15rem;}
-    .ed4 .cont_with>div{width: 100%;margin-bottom: 0.4rem;}
+    .ed4 .cont_with>div{width: 100%;margin-bottom: 0.4rem;height: 15rem;}
     .foot_h{height: 25rem;}
 }
 
@@ -1039,7 +1039,7 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
     .teach_plan .plan2 .plan_cont .plan_text h5{padding-top: 1rem;}
     .teach_plan .plan4 .plan_text{position: absolute;width: 80%;top: 0;right: 10%;text-align: center;}
     .teach_plan .plan4 .plan_text h5{padding: 1rem 0 0.6rem;color: #000;font-size: 0.36rem;font-weight: 600;}
-    .teach_plan .plan1 .plan_cont .plan_text li span{display: inline-block;width: 0.6rem;height: 0.6rem;vertical-align:middle;margin-right: 0.2rem;}
+    .teach_plan .plan1 .plan_cont .plan_text li span{display: inline-block;width: 0.4rem;height: 0.4rem;vertical-align:middle;margin-right: 0.2rem;}
     
 }
 
@@ -1080,7 +1080,8 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 .com_plan .plan_fg .top_cont p{color: #fff;font-size: 0.26rem;}
 @media (max-width: 800px){
     .com_plan .com_plan1{padding: 0.4rem 0.4rem;}
-    .com_plan .com_plan1 .text h5{padding: 0.3rem 0 0.6rem;}
+
+    .com_plan .com_plan1 .text h5{padding: 2rem 0 0.6rem;}
     .com_plan .com_plan_top h4{padding-top: 4rem;}
 }
 
@@ -1302,27 +1303,27 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .mercury .mercury6 .cont li:hover img{transform: scale(1.2);box-shadow: 0 0 6px 5px #aaa;}
 .mercury .mercury6 .cont h5{font-size: 0.36rem;font-weight: 600}
 @media (max-width: 900px){
-    .dian{width: 0.6rem !important; height: 0.6rem;background-size: 0.4rem 0.4rem;margin: 0.1rem 0.3rem 0 0;}
+    .dian{width: 0.6rem !important; height: 0.6rem;background-size: 0.3rem 0.3rem;margin: 0rem 0.3rem 0 0;}
     .mercury .ed_top{height: 100%;}
     .mercury .mercury1 .img, .mercury .mercury1 .cont{width: 100%;}
     .mercury .mercury1 .img{padding-top: 5rem;}
-    .mercury .mercury_detail .img{padding-top: 4rem;width: 90%;}
+    .mercury .mercury_detail .img{padding-top: 4rem;width: 70%; height: 7rem;}
     .mercury .mercury1 .cont .title{padding-top: 0;}
-    .mercury .mercury1 .cont li span{height: 1rem;line-height: 1rem;width: 5rem;}
-    .mercury .ed_top .ed1_txt h4{padding-top: 6rem;}
+    .mercury .mercury1 .cont li span{height: 0.8rem;line-height: 0.8rem;width: 5rem;}
+    .mercury .ed_top .ed1_txt h4{padding-top: 0rem;}
     .mercury .mercury2 .icon li{width: 2rem;margin-bottom: 0.4rem;}
     .mercury .mercury2 .icon li.small{width: 1.8rem;}
     .mercury .mercury2 ul{width: 90%;}
     .mercury .mercury3{padding: 0;}
     .mercury .mercury3 .cont{padding-top: 4rem;padding-bottom: 0.6rem;height: auto;}
-    .mercury .mercury3 .img{padding-top: 0;}
+    .mercury .mercury3 .img{padding-top: 0; width: 90%; height: 8rem;}
     .mercury .mercury6{height: 100%;padding-top: 2rem;box-sizing: border-box;}
     .mercury .mercury6 .cont{height: 90%;width: 90%;}
     .mercury .mercury6 .cont li{width: 4rem;margin-bottom: 0.6rem;}
     .mercury .mercury6 .cont h5.title{padding-top: 2rem;}
     .mercury .mercury4 .img{margin-top: 0}
     .mercury .mercury4 .img:first-child{margin-top: 2.5rem;}
-    .mercury .mercury4 .img .cont h5{padding-top: 1rem;}
+    .mercury .mercury4 .img .cont h5{padding-top: 2rem;}
 }
 
 
