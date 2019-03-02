@@ -24,9 +24,10 @@
         <div class="sq"><a href="javascript:;"></a></div>
         <ul class="nav">
             <li><a href="./index.html">首页</a></li>
-            <li class="cp"><a href="javascript:;">产品系列                </a>                <div class="child_nav">                     <a href="./psyche.html" >PSYCHE ZERO</a>                     <a href="./mercury.html">MERCURY</a>                </div>             </li>
+            <li class="cp"><a href="javascript:;">产品系列                </a>                <div class="child_nav"><span class="sj"></span><a href="./psyche.html" >PSYCHE ZERO</a>                     <a href="./mercury.html">MERCURY</a>                </div>             </li>
             <li class="fangan"><a href="./com_plan.html">神经科学AI综合解决方案</a>
                 <div class="child_nav">
+                    <span class="sj"></span>
                     <a href="./finance.html" >金融机构减压室方案</a>
                     <a href="./english.html">少儿在线英语教育方案</a>
                     <a href="./teach_plan.html">中小学学习教育方案</a>
@@ -114,7 +115,7 @@
                         <h4><a href="./index.html">首页</a></h4>
                     </li>
                     <li>
-                        <h4><a href="javascript:;">产品列表</a></h4>
+                         <h4 class="no_hover"><a href="javascript:;">产品列表</a></h4>
                         <a href="./psyche.html">PSYCHE ZERO</a>
                         <a href="./mercury.html">MERCURY</a>
                     </li>
@@ -122,12 +123,12 @@
                         <h4><a href="./problem.html">客服</a></h4>
                     </li>
                     <li>
-                        <h4><a href="javascript:;">媒体资讯</a></h4>
+                        <h4 class="no_hover"><a href="javascript:;">媒体资讯</a></h4>
                         <a href="./news.html">新闻动态</a>
-                        <a href="javascript:;">媒体报道</a>
+                        <a href="./news.html">媒体报道</a>
                     </li>
                     <li>
-                        <h4><a href="javascript:;">关于公司</a></h4>
+                        <h4 class="no_hover"><a href="javascript:;">关于公司</a></h4>
                         <a href="./company_into.html">公司介绍</a>
                         <a href="./contact.html">联系我们</a>
                         <a href="./join_us.html">加入我们</a>
@@ -172,7 +173,7 @@
         function getData(){
             $("#zp_cont").html("");
             $.ajax({
-                url:"http://www.yinian.com:8080/Admin/Recruit/lists",
+                url:config.url+"Recruit/lists",
                 type:"GET",
                 data:{
                     pageSize:10,
