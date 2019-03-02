@@ -1,5 +1,9 @@
 var config={
+<<<<<<< HEAD
     // url:"http://www.yinian.com:8080/Admin/",
+=======
+    // url:"http://www.yinian.com:8080/Admin/"
+>>>>>>> 2c1f41a18b35f7a286fd8a7500b103bcc7a9f37f
     url:"http://106.15.229.159:9001/Admin/"
 }
 $(function(){
