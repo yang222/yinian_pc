@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>易念科技</title>
+    <script src="./../src/js/swiper.min.js"></script>
+    <script src="../src/js/jquery-1.9.1.min.js"></script>
+    <script src="../src/js/jquery.mousewheel.min.js"></script>
+    <script src="../src/js/common.js"></script>
+    <script src="./../src/js/swiper.animate1.0.3.min.js"></script>
+    <link rel="stylesheet" href="../src/css/swiper.min.css">
+    <link rel="stylesheet" href="./../src/css/animate.min.css">
+    <link rel="stylesheet" href="./../src/css/normal.css">
+    <link rel="stylesheet" href="./../src/css/common.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
+    <style>
+    .swiper-container1{width: 100%;height: 100%;position: relative;}
+    .swiper-pagination1{color: #fff; position: absolute;height:1rem;z-index: 10;bottom: 10%;width: 20%;left: 20%;}
+    .swiper-pagination1 .swiper-pagination-current{font-size: 0.4rem;color: #fff;}
+    .swiper-pagination1 .swiper-pagination-total{font-size: 0.26rem;color: #fff;}
+    .swiper-button-next{width: 1.5rem;height: 4rem;margin-top: -2rem;opacity: 0;transition: all 0.5s}
+    .swiper-button-prev{width: 1.5rem;height: 4rem;margin-top: -2rem;opacity: 0 !important;cursor: pointer;transition: all 0.5s}
+    .swiper-button-next,.swiper-button-prev{background-size: 50% auto;}
+    .swiper-button-prev:hover{opacity: 1 !important;}
+    .swiper-button-next:hover{opacity: 1 ;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo"><a href="./index.html">易念科技</a></h1>
+        <div class="sq"><a href="javascript:;"></a></div>
+        <ul class="nav">
+            <li  class="active"><a href="./index.html">首页</a></li>
+            <li class="cp"><a href="javascript:;">产品系列
+               </a>
+               <div class="child_nav">
+                    <span class="sj"></span>
+                    <a href="./psyche.html" >PSYCHE ZERO</a>
+                    <a href="./mercury.html">MERCURY</a>
+               </div>
+            </li>
+            <li class="fangan"><a href="./com_plan.html">神经科学AI综合解决方案</a>
+                <div class="child_nav">
+                    <span class="sj"></span>
+                    <a href="./finance.html" >金融机构减压室方案</a>
+                    <a href="./english.html">少儿在线英语教育方案</a>
+                    <a href="./teach_plan.html">中小学学习教育方案</a>
+                </div>
+            </li>
+            <li><a href="./education.html">STEM教育套件</a></li>
+            <li><a href="./principle.html">科学原理</a></li>
+            <li><a href="./platform.html">开发</a></li>
+            <li><a href="./download.html">软件下载</a></li>
+            <li><a href="./shop.html">商店</a></li>
+            <li><span class="yx"><a href="javascript:;">CN</a></span><span><a href="./../../EN/view/index.html">EN</a></span></li>
+        </ul>
+    </div>
+    <div class="index">
+        <div class="swiper-container swiper-container-vertical" id="swiper-container">
+            <div class="index_jt swiper-button-next1" id="index_jt">
+                <img src="./../src/images/index/jt.png" alt="">
+            </div>
+            <div class="swiper-wrapper" >
+                <div class="swiper-slide swiper-slide-active">
+                    <div class="swiper-container1 swiper-container-horizontal">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-prev" >
+                                <a href="./psyche.html" class="link">
+                                <img src="./../src/images/index/banner1.jpg" alt="">
+                                <div class="bg ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s" >
+                                    
+                                </div>
+                                <div class="cont">
+                                    <h5 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0s">PSYCHE</h5>
+                                    <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.2s">关注大脑健康  体验意念交互<br>
+                                            训练注意力、放松减压、“念力”操控</p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active pos_rel banner2" >
+                                <a href="./mercury.html" class="link"><img src="./../src/images/index/banner2.jpg" alt=""></a>
+                                <div class="ban_cont">
+                                    <h6  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s"><span class="line"></span>M E R C U R Y <span class="line"></span> </h6>
+                                    <h5  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s">隔空操控 物随你动</h5>
+                                    <div class="text ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.6s"> 一个简单手势动作&nbsp;&nbsp;&nbsp;&nbsp; 即可直观控制你的数字生活</div>
+                                    <a href="./shop.html" class="shop ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.9s">< < 立即购买 </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active pos_rel banner3" >
+                                <a href="./com_plan.html" class="link"><img src="./../src/images/index/banner3.jpg" alt=""></a>
+                                <div class="ban_cont">
+                                    <h6 class="b_tit ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s">神经科学AI综合解决方案:</h6>
+                                    <p  class=" ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">结合神经科学、教育学、心理学</p>
+                                    <p  class=" ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.6s">利用人工智能和脑机接口技术为用户提供有效的解决方案</p>
+                                    <a href="./com_plan.html"  class=" ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.9s">了解详情 > ></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active banner4" >
+                                <a href="./education.html" class="link"><img src="./../src/images/index/banner4.jpg" alt=""></a>
+                                <div class="ban_cont" >
+                                    <div class="img">
+                                        <h6 class="b_tit ani" style="text-align: left;padding-left: 2rem;" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">STEM套件:</h6>
+                                        <img src="./../src/images/index/b4_1.png" alt="" class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">
+                                        <div class="text ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">
+                                            inspiring Future via Linking Easy eXplorations
+                                        </div>
+                                    </div>  
+                                    <div class="clearfix zy">
+                                        <div class="left ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                                            <p>为大脑做引导性训练<br>提升学习效率，改善大脑状态</p>
+                                        </div>
+                                        <div class="right ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                                            Thinking is Power
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active banner5" >
+                                <a href="./company_into.html" class="link">
+                                <img src="./../src/images/index/banner5.jpg" alt=""></a>
+                                <div class="ban_cont">
+                                    
+                                    <h6 class="b_tit ani" style="text-align: left;" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">易念科技（公司）：</h6>
+                                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s">采用融合脑肌电的新型脑机接口技术 <br>
+                                        为用户打造更智能的穿戴设备<br>当AI技术与神经科学原理相遇<br>易念为你打造全球领先的神经科学AI 综合解决方案
+                                    </p>
+                                    <a href="./company_into.html"  class=" ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.6s">了解详情 > ></a>
+                                </div>
+                            </div>
+                       
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination1 swiper-pagination-fraction"><span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">10</span></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <div class="index1">
+                        <div class="index_cont ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0s" >
+                            <h5 class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s" >PSYCHE帮你训练出一个更健康的大脑</h5>
+                            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.8s" >脑状态监测、脑状态分析、提升大脑功能</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <div class="index1 index2">
+                        <div class="index_cont ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s" >
+                            <h5 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.5s">使用MERCURY操控你的玩具</h5>
+                            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.8s">MERCURY可以读取手势和动作，让您无缝地控制智能设备</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <div class="index4 index6 pos_rel">
+                        <div class="index_cont pos_ab">
+                            <h4 class="title">将人工智能与神经科学对接</h4>
+                            <p class="text">让两门之前基本没有交集的学科开始连接 改善教育、健康等热门领域现状</p>
+                            <ul>
+                                <li class="opacity ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s" >
+                                    <div class="img">
+                                        生物电人工智能综合解决方案
+                                    </div>
+                                </li>
+                                <li class="hover ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0s">
+                                   <img src="./../src/images/index/rg1.png" alt="">
+                                </li>
+                                <li class="hover ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+                                    <img src="./../src/images/index/rg2.jpg" alt="">
+                                </li>
+                                <li class="hover ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+                                    <img src="./../src/images/index/rg3.jpg" alt="">
+                                </li>
+                                <li class="hover ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
+                                    <img src="./../src/images/index/rg4.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <div class="index3 pos_rel">
+                        <div class="index_cont pos_ab">
+                            <h4 class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">使用MERCURY操控你的玩具</h4>
+                            <h5 class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s">STEM教育全新概念，帮助孩子提升学习效率，体验科技带来的乐趣</h5>
+                            <h6 class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.7s">易念科技STEM套件包含：</h6>
+                            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.7s">脑电波头箍+《脑力魔方》APP</p>
+                            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.7s">脑电波头箍+智能竞速小汽车</p>
+                            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.7s">肌电臂环+机械臂</p>
+                            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.7s">肌电臂环+智能迷你无人机</p>
+                            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.7s">肌电实验箱</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <div class="index4 pos_rel">
+                        <div class="index_cont pos_abs" >
+                            <h4 class="title ani" swiper-animate-effect="rubberBand" swiper-animate-duration="1s" swiper-animate-delay="0s" style="padding-top: 0rem;">我们的优势</h4>
+                            <p class="text ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0s">WHY CHOOSE US</p>
+                            <ul class="choose">
+                                <li class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s"> 
+                                    <img src="./../src/images/index/ys1.jpg" alt=""> 
+                                    <div class="ys_cont ys_pad">
+                                        <p>多通道信号处理器采集大数据&nbsp;&nbsp;&nbsp;  基于人工智能算法形成云智能模型</p>
+                                        <p>准确将EEG、EMG信号转化为精确数据，无论信号多杂乱，
+                                                都可以精准解析</p>
+                                    </div>
+                                </li>
+                                <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                                    <img src="./../src/images/index/ys2.jpg" alt="">
+                                    <div class="ys_cont">
+                                        <h5 >国内外实验室专家共同助力创造行业领先产品</h5>
+                                        <p>与国内著名医学院神经信息实验室以及澳洲顶级大学的神经电实验室建立联合研究中心，共享先进信息技术资源研发产品</p>
+                                    </div>
+                                </li>
+                                <li class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                                     <img src="./../src/images/index/ys3.jpg" alt="">
+                                    <div class="ys_cont">
+                                        <h5 >热门领域&nbsp;&nbsp;&nbsp;  尽享科技福利</h5>
+                                        <p>全面覆盖教育、健康、娱乐等热门领域，为用户提供多样化产品服务，满足不同用户个性化需求
+                                                </p>
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <div class="index4 index5">
+                        <div class="index_cont" id="cont_top">
+                            <h4 class="title ani" style="padding-top:2rem;" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s">媒体资讯</h4>
+                            <p class="text ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0s">NEWS AND EVENTS</p>
+                            <ul id="datalist">
+                                <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                                    <div class="gb"></div>
+                                    <div class="conts">
+                                        <div class="news_tit">
+                                            <h5 class="color">MEDIA  INFORMATION</h5>
+                                            <h4>这里是新闻标题这里是新闻标题新闻标题</h4>
+                                            <span class="color">20190221</span>
+                                        </div>
+                                        <div class="news_cont">
+                                            <p>这里是新闻这里是新闻这里是新闻这里
+                                                    是新闻这里是新闻这里是新闻这里是新
+                                                    闻这里是新闻这里是新闻这里是新闻这
+                                                    里是新闻这里是新闻这里是新闻这里是
+                                                    新闻这里是新闻这里是新闻这里是新闻
+                                                    这里是新闻这里是新闻这里是新闻这里
+                                                    是新闻这里是新闻......</p>
+                                        </div>
+                                        <a href="javascritpt:;" class="detail">查看详情</a>
+                                    </div>
+                                </li>
+                                <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.3s">
+                                    <div class="gb"></div>
+                                    <div class="conts">
+                                        <div class="news_tit">
+                                            <h5 class="color">MEDIA  INFORMATION</h5>
+                                            <h4>这里是新闻标题这里是新闻标题新闻标题</h4>
+                                            <span class="color">20190221</span>
+                                        </div>
+                                        <div class="news_cont">
+                                            <p>这里是新闻这里是新闻这里是新闻这里
+                                                    是新闻这里是新闻这里是新闻这里是新
+                                                    闻这里是新闻这里是新闻这里是新闻这
+                                                    里是新闻这里是新闻这里是新闻这里是
+                                                    新闻这里是新闻这里是新闻这里是新闻
+                                                    这里是新闻这里是新闻这里是新闻这里
+                                                    是新闻这里是新闻......</p>
+                                        </div>
+                                        <a href="javascritpt:;" class="detail">查看详情</a>
+                                    </div>
+                                </li>
+                                <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.6s">
+                                    <div class="gb"></div>
+                                    <div class="conts">
+                                        <div class="news_tit">
+                                            <h5 class="color">MEDIA  INFORMATION</h5>
+                                            <h4>这里是新闻标题这里是新闻标题新闻标题这里是新闻标题这里是新闻标题新闻标题</h4>
+                                            <span class="color">20190221</span>
+                                        </div>
+                                        <div class="news_cont">
+                                            <p>这里是新闻这里是新闻这里是新闻这里
+                                                    是新闻这里是新闻这里是新闻这里是新
+                                                    闻这里是新闻这里是新闻这里是新闻这
+                                                    里是新闻这里是新闻这里是新闻这里是
+                                                    新闻这里是新闻这里是新闻这里是新闻
+                                                    这里是新闻这里是新闻这里是新闻这里
+                                                    是新闻这里是新闻......</p>
+                                        </div>
+                                        <a href="javascritpt:;" class="detail">查看详情</a>
+                                    </div>
+                                </li>
+                                <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.9s">
+                                    <div class="gb"></div>
+                                    <div class="conts">
+                                        <div class="news_tit">
+                                            <h5 class="color">MEDIA  INFORMATION</h5>
+                                            <h4>这里是新闻标题这里是新闻标题新闻标题</h4>
+                                            <span class="color">20190221</span>
+                                        </div>
+                                        <div class="news_cont">
+                                            <p>这里是新闻这里是新闻这里是新闻这里
+                                                    是新闻这里是新闻这里是新闻这里是新
+                                                    闻这里是新闻这里是新闻这里是新闻这
+                                                    里是新闻这里是新闻这里是新闻这里是
+                                                    新闻这里是新闻这里是新闻这里是新闻
+                                                    这里是新闻这里是新闻这里是新闻这里
+                                                    是新闻这里是新闻......</p>
+                                        </div>
+                                        <a href="javascritpt:;" class="detail">查看详情</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot" id="foot">
+                                <div class="foot_top">
+                                    <div class="foot_left">
+                                        <div class="logo">
+                                            <img src="./../src/images/logo.png" alt="">
+                                        </div>
+                                        <p class="text"><span>电话：</span> +86-0755-86667894</p>
+                                        <p class="text"><span>邮箱：</span> publicmedia@neu-flex.com</p>
+                                        <p class="text"><span>地址：</span> 深圳市南山区科技园高新中三道
+                                            深圳软件园一期 5 栋 210 室</p>
+                                    </div>
+                                    <div class="foot_center">
+                                        <ul>
+                                            <li>
+                                                <h4><a href="./index.html">首页</a></h4>
+                                            </li>
+                                            <li>
+                                                 <h4 class="no_hover"><a href="javascript:;">产品列表</a></h4>
+                                                <a href="./psyche.html">PSYCHE ZERO</a>
+                                                <a href="./mercury.html">MERCURY</a>
+                                            </li>
+                                            <li>
+                                                <h4><a href="./problem.html">客服</a></h4>
+                                            </li>
+                                            <li>
+                                                <h4 class="no_hover"><a href="javascript:;">媒体资讯</a></h4>
+                                                <a href="./news.html">新闻动态</a>
+                                                <a href="./news.html">媒体报道</a>
+                                            </li>
+                                            <li>
+                                                <h4 class="no_hover"><a href="javascript:;">关于公司</a></h4>
+                                                <a href="./company_into.html">公司介绍</a>
+                                                <a href="./contact.html">联系我们</a>
+                                                <a href="./join_us.html">加入我们</a>
+                                            </li>
+                                            <li>
+                                                <h4><a href="javascript:;">论坛</a></h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="foot_right">
+                                        <ul>
+                                            <li class="wx " swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0s"> 
+                                                <img src="./../src/images/wx.png" alt="微信公众号">
+                                                <p class="text">微信公众号</p>
+                                            </li>
+                                            <li class="wb " swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.5s"> 
+                                                <img src="./../src/images/wb.png" alt="微信公众号">
+                                                <p class="text">微博二维码</p>
+                                            </li>
+                                            <li class="tt " swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s"> 
+                                                <img src="./../src/images/tt.png" alt="微信公众号">
+                                                <p class="text">头条号</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="foot_b">
+                                    <p class="b1">Copyright Neural FLEX 粤ICP备18060473号</p>
+                                    <p class="b2">本站部分图片转自网络，&nbsp;&nbsp;如有侵权，&nbsp;&nbsp;请联系网站客服删除，&nbsp;&nbsp;谢谢！</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="isShow" style="display: none;"> 
+                    <div class="foot" id="foot">
+                        <div class="foot_top">
+                            <div class="foot_left">
+                                <div class="logo">
+                                    <img src="./../src/images/logo.png" alt="">
+                                </div>
+                                <p class="text"><span>电话：</span> +86-0755-86667894</p>
+                                <p class="text"><span>邮箱：</span> publicmedia@neu-flex.com</p>
+                                <p class="text"><span>地址：</span> 深圳市南山区科技园高新中三道
+                                        二号深圳软件园5栋210</p>
+                            </div>
+                            <div class="foot_center">
+                                <ul>
+                                    <li>
+                                        <h4><a href="./index.html">首页</a></h4>
+                                    </li>
+                                    <li>
+                                        <h4 class="no_hover"><a href="javascript:;">产品列表</a></h4>
+                                        <a href="./psyche.html">PSYCHE ZERO</a>
+                                        <a href="./mercury.html">MERCURY</a>
+                                    </li>
+                                    <li>
+                                        <h4><a href="./problem.html">客服</a></h4>
+                                    </li>
+                                    <li>
+                                        <h4 class="no_hover"><a href="javascript:;">媒体资讯</a></h4>
+                                        <a href="./news.html">新闻动态</a>
+                                        <a href="./news.html">媒体报道</a>
+                                    </li>
+                                    <li>
+                                        <h4 class="no_hover"><a href="javascript:;">关于公司</a></h4>
+                                        <a href="./company_into.html">公司介绍</a>
+                                        <a href="./contact.html">联系我们</a>
+                                        <a href="./join_us.html">加入我们</a>
+                                    </li>
+                                    <li>
+                                        <h4><a href="javascript:;">论坛</a></h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="foot_right">
+                                <ul>
+                                    <li class="wx " swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0s"> 
+                                        <img src="./../src/images/wx.png" alt="微信公众号">
+                                        <p class="text">微信公众号</p>
+                                    </li>
+                                    <li class="wb " swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.5s"> 
+                                        <img src="./../src/images/wb.png" alt="微信公众号">
+                                        <p class="text">微博二维码</p>
+                                    </li>
+                                    <li class="tt " swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s"> 
+                                        <img src="./../src/images/tt.png" alt="微信公众号">
+                                        <p class="text">头条号</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="foot_b">
+                            <p class="b1">Copyright Neural FLEX 粤ICP备18060473号</p>
+                            <p class="b2">本站部分图片转自网络，&nbsp;&nbsp;如有侵权，&nbsp;&nbsp;请联系网站客服删除，&nbsp;&nbsp;谢谢！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+        </div>
+     </div>
+
+</body>
+<script>
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+       var  pageSize = 3
+       $("#isShow").css("display","block")
+    }else{
+        $("#isShow").css("display","none")
+       var  pageSize = 4;
+    }
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable :true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next1',
+        },
+        direction: 'vertical',
+        slidesPerView: 1,
+        allowSlidePrev : true,
+        mousewheel : true,
+        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+        spaceBetween: 0,
+        on:{
+            slideChangeTransitionStart:function(){
+                if(this.activeIndex == 5){
+                    $(document).unbind("mousewheel DOMMouseScroll")
+                }
+            },
+            init: function(){
+                swiperAnimateCache(this); //隐藏动画元素 
+                swiperAnimate(this); //初始化完成开始动画
+            }, 
+            slideChangeTransitionEnd: function(){ 
+                swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+                if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                    if(this.activeIndex == 7){
+                        $("#index_jt").fadeOut();
+                    }
+
+                }else {
+                    if(this.activeIndex == 6){
+                        $("#index_jt").fadeOut();
+                    }
+                }
+                if(this.activeIndex == 6){
+                    var a = 0;
+                    setTimeout(function(){
+                        $(document).bind("mousewheel DOMMouseScroll", function (e) {     
+                           
+                            var delta = (e.originalEvent.wheelDelta && (e.originalEvent.wheelDelta > 0 ? 1 : -1)) ||  // chrome & ie
+                                        (e.originalEvent.detail && (e.originalEvent.detail > 0 ? -1 : 1));              // firefox
+
+                            if(!!window.ActiveXObject || "ActiveXObject" in window){
+                                if(e.deltaY == 1){
+                                    if(a > 0){
+                                        $("#cont_top").animate({top:'0'});
+                                        $("#foot").animate({bottom:'-10rem'});
+                                        // swiper.slideTo(6,200,false)
+                                        setTimeout(function(){
+                                            swiper.allowSlidePrev = true;
+                                        },1000)
+                                        a = 0;
+                                    }else{
+                                    } 
+                                }else{
+                                    a++;
+                                    $("#cont_top").animate({top:'-10rem'});
+                                    $("#foot").animate({bottom:'0'});
+                                    swiper.allowSlidePrev = false;
+                                    // console.log('向下滚动');
+                                }
+                            }else{
+                                if (delta > 0) {
+                                    if(a > 0){
+                                        $("#cont_top").animate({top:'0'});
+                                        $("#foot").animate({bottom:'-10rem'});
+                                        // swiper.slideTo(6,200,false)
+                                        setTimeout(function(){
+                                            swiper.allowSlidePrev = true;
+                                        },1000)
+                                        a = 0;
+                                    }else{
+                                    } 
+                                } else {
+                                    a++;
+                                    $("#cont_top").animate({top:'-10rem'});
+                                    $("#foot").animate({bottom:'0'});
+                                    swiper.allowSlidePrev = false;
+                                    // console.log('向下滚动');
+                                }
+                                return false;
+                            }
+                                            
+                        })
+                    },1000)
+                    
+                }else{
+                    $("#index_jt").fadeIn();
+                }
+                console.log(this.activeIndex);//切换结束时，告诉我现在是第几个slide
+            } 
+        },
+    }) 
+    var swiper2 = new Swiper('.swiper-container1', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination1',
+            type: 'fraction',
+            
+        },
+        autoplay: {
+            delay: 5000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        on:{
+            init: function(){
+                swiperAnimateCache(this); //隐藏动画元素 
+                swiperAnimate(this); //初始化完成开始动画
+            }, 
+            slideChangeTransitionEnd: function(){ 
+                swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+            } 
+        },
+    });
+    $(function(){
+        $(".swiper-button-prev").click(function(){
+            if(window.event){//IE下阻止冒泡
+                event.cancelBubble  = true;
+            }else{
+                event.stopPropagation();
+            }
+        })
+        $(".swiper-button-next").click(function(){
+            if(window.event){//IE下阻止冒泡
+                event.cancelBubble  = true;
+            }else{
+                event.stopPropagation();
+            }
+        })
+        function getData(){
+            $.ajax({
+                url:config.url+"New/lists",
+                type:"GET",
+                data:{
+                    pageSize:pageSize,
+                    page:1,
+                    type:0,
+                    random:new Date().getTime()
+                },
+                dataType:"json",
+                success:function(data){
+                    $("#datalist").html("");
+                    if(data.status == 200){
+                        if(data.data.length > 0){
+                            // $("#datalist").html("<li style='color:#fff;font-size:0.36rem;text-align:center;border:none;'>暂无新闻！</li>")
+                            for(var i=0;i<data.data.length;i++){
+                                var html = '<li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="'+(1+0.3*i)+'s">'+
+                                    '<div class="gb"></div><div class="conts"><div class="news_tit">'+
+                                    '<h5 class="color">MEDIA  INFORMATION</h5><h4>'+data.data[i].title+'</h4><span class="color">'+data.data[i].date+'</span>'+
+                                    '</div><div class="news_cont"><p>'+data.data[i].about+'</p>'+
+                                    '</div><a href="./news_cont.html?id='+data.data[i].id+'&type='+data.data[i].type+'" class="detail">查看详情</a></div></li>'
+                                $("#datalist").append(html)
+                            }
+                        }else{
+                            $("#datalist").html("<li style='color:#fff;font-size:0.36rem;text-align:center;border:none;'>暂无新闻！</li>")
+                        }
+                        
+                    }
+                },
+                error:function(err){
+                    // $("#datalist").html("<li style='color:#fff;font-size:0.36rem;text-align:center;border:none;'>暂无新闻！</li>")
+                }
+            })   
+        }
+        getData();
+    })
+  
+</script>
+</html>
