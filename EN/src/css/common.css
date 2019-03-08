@@ -1133,8 +1133,8 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 .company1 .ed1_txt  p{margin-bottom: 0.3rem;padding: 0 2rem;}
 .company2{background-image: url("./../images/company_inro/img2.jpg");text-align: center;height: 100%;}
 .company2 .c_left,.company2 .center,.company2 .c_right{margin-top: 0rem; width: 5rem; display: inline-block;vertical-align: top;}
-.company2 .c_left div{text-align: left;padding-left: 0.4rem;padding-right: 1.7rem;padding-top: 0.3rem; box-sizing: border-box; width:6rem ;height: 4.6rem;background: url("./../images/company_inro/img3.png") no-repeat center center;background-size: 100% 100%;}
-.company2 .c_right div{text-align: left;padding-left: 1.7rem;padding-top: 0.3rem; box-sizing: border-box; width:6rem ;height: 4.6rem;background: url("./../images/company_inro/img4.png") no-repeat center center;background-size: 100% 100%;}
+.company2 .c_left div{text-align: left;padding-left: 0.4rem;padding-right: 1.7rem;padding-top: 0.3rem; box-sizing: border-box; width:6rem ;height: 4.8rem;background: url("./../images/company_inro/img3.png") no-repeat center center;background-size: 100% 100%;}
+.company2 .c_right div{text-align: left;padding-left: 1.7rem;padding-top: 0.3rem; box-sizing: border-box; width:6rem ;height: 4.8rem;background: url("./../images/company_inro/img4.png") no-repeat center center;background-size: 100% 100%;}
 .company2 .c_left .left_bottom{background-image: url("./../images/company_inro/img5.png");margin-top: 1.5rem;}
 .company2 .c_right .right_bottom{background-image: url("./../images/company_inro/img6.png");margin-top: 1.5rem;padding-right: 0.2rem;}
 .company2 .center{width: 5rem; height: 7.5rem;background:url("./../images/company_inro/img7.png") no-repeat center center;background-size: 100% 100%; margin:1.5rem 1rem 0 2rem;
@@ -1225,7 +1225,7 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 }
 .finance .finance_cont .finance_bg .jys li{width: 5rem; margin:  0 2rem;margin-bottom: 1rem;}
 .finance .finance_cont .finance_bg .jys li .img{width: 100%;height:5rem ;background: url("./../images/finance/A.png") no-repeat center center;background-size: 100% 100%;}
-.finance .finance_cont .finance_bg .jys li h5{padding: 1rem 0 0.1rem;font-size: 0.12rem;}
+.finance .finance_cont .finance_bg .jys li h5{padding: 1rem 0 0.1rem;font-size: 0.24rem;}
 .finance .finance_cont .finance_bg .jys li p{color: #333;font-size: 0.12rem;}
 .finance .finance_cont .finance_bg .jys li table td{height: 100%;}
 .finance .finance_cont .finance_bg .jys li table{font-size:0.26rem;color: #000;text-align: center;width: 100%;height: 1.5rem;margin-top: 0.3rem;border: 1px solid #000;}
