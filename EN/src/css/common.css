@@ -186,9 +186,8 @@ body{text-align: center;}
     display: block;
     width: 100%;
     height: 1rem;
-
     color: #eaeaea;
-    font-size: 0.24rem;
+    font-size: 0.22rem;
     opacity: 0.7;
 }
 .foot .foot_center li a:hover{
@@ -198,7 +197,7 @@ body{text-align: center;}
     color: #fff;
 }
 .foot .foot_center li h4 a{
-    font-size: 0.26rem;
+    font-size: 0.22rem;
     color: #fff;
     opacity: 1;
 }
@@ -336,7 +335,7 @@ body {
     width:6.58rem;height: 4rem;background: url("./../images/index/bg1.png") no-repeat center center;background-size: 100% 100%;}
 .index .cont{z-index: 10;position: absolute;top: 35%;left: 20%;text-align: left;}
 .index .cont h5{font-size: 0.64rem;color: #11a0ea;padding-top: 0.7rem;font-weight: 600;padding-left: 0.8rem;}
-.index .cont p{font-size: 0.42rem;color: #fff;padding-left: 0.8rem;padding-top: 0.3rem;}
+.index .cont p{font-size: 0.42rem;color: #fff;padding-left: 0.8rem;padding-top: 0rem;}
 .index .index1{background: url("./../images/index/bg2.jpg") no-repeat center center;background-size: cover;height: 100%;width: 100%;position: relative;}
 .index .index1 .index_cont{text-align: left;padding: 0 0.3rem; width: 8.5rem;height: 3.5rem;position: absolute; background: rgba(255, 255, 255, 0.5);top: 50%;right: 10%; margin-top: -1.75rem;}
 .index .index1 .index_cont h5{font-size: 0.46rem;font-weight: 0;padding: 0.8rem 0 0.2rem;font-weight: 600}
@@ -995,7 +994,10 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 .news_conts .detail_cont .d_left .wz a:hover{color:#11a0ea}
 .news_conts .detail_cont .d_left .news_tit{padding: 0.4rem 0;color: #333;font-size: 0.4rem;text-align: center;}
 .news_conts .detail_cont .d_left .time{color: #666;text-align: right;font-size: 0.26rem;}
-.news_conts .detail_cont .d_left .all_cont{ padding-top:0.5rem;color: #666;text-align: right;font-size: 0.24rem;text-align: left;}
+.news_conts .detail_cont .d_left .all_cont{ padding-top:0.5rem;color: #666;text-align: right;font-size: 0.24rem;text-align: left;height: auto;  
+    word-wrap:break-word;  
+    word-break:break-all;  
+    overflow: hidden;}
 .news_conts .detail_cont .d_right{display: inline-block;width: 25%;}
 .news_conts .detail_cont .d_right h4{width: 100%; height: 1rem;background: #11a0ea;color: #fff;font-size: 0.42rem;line-height: 1rem;text-align: center;}
 .news_conts .detail_cont .d_right .hydt{
@@ -1202,8 +1204,8 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 .jt {display:block;margin-bottom: 0.3rem;}
 .banner{width: 100%;height: auto;position: relative;}
 .banner .cont_with{position: absolute;top: 0;left: 50%;width: 100%;max-width: 1200px;transform: translateX(-50%);height: 100%;}
-.finance .finance_cont .cont_with .jys li.jxx h5,.finance .finance_cont .cont_with .jys li.xxie h5{color: #fff;}
-.finance .finance_cont .cont_with .jys li p{color: #fff;}
+.finance .finance_cont .cont_with .jys li.jxx h5,.finance .finance_cont .cont_with .jys li.xxie h5{color: #fff;font-size: 0.4rem;}
+.finance .finance_cont .cont_with .jys li p{color: #fff;font-size: 0.32rem;}
 .finance .finance_cont .cont_with .jys .jxx{position: absolute;bottom: 20%;left: 0;}
 .finance .finance_cont .cont_with .jys .xxie{position: absolute;top: 20%;right: 0;}
 .banner img{width: 100%;}
@@ -1489,7 +1491,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .psyche .psyche6 .ed1_txt .td {font-size: 0}
 .psyche .psyche6 .ed1_txt .td li{text-align: left;margin-bottom: 0.5rem;display: flex;padding-right: 0.4rem;}
 .psyche .psyche6 .ed1_txt .td span{background: url("./../images/psyche/icon1.png")no-repeat center center;background-size: auto 80%;  display: inline-block;vertical-align: top;height: 1rem;width: 1rem;margin-right: 0.4rem;}
-.psyche .psyche6 .ed1_txt .td div{display: inline-block;vertical-align: top;height: 1rem;font-size: 0.26rem;color: #fff;flex: 1;}
+.psyche .psyche6 .ed1_txt .td div{display: inline-block;vertical-align: top;font-size: 0.26rem;color: #fff;flex: 1;}
 .mercury .ed_top .ed1_txt li p{padding: 0;font-size: 0.3rem;}
 .mercury .ed_top .ed1_txt li h6{padding: 0;color: #28a7e1; font-size: 0.3rem;}
 .psyche .psyche6 .ed1_txt .td .icon2{background-image: url("./../images/psyche/icon2.png")}
@@ -1521,7 +1523,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .psyche .psyche11 .cont_with ul li{display: inline-block;width: 45%;margin:0 0.4rem;position: relative; height: 5rem; cursor: pointer; margin-bottom: 0.4rem;overflow: hidden;}
 .psyche .psyche11 .cont_with ul li .file_cont h6{font-weight: 600;font-size: 0.28rem;}
 .psyche .psyche11 .cont_with ul li img{width: 100%;height: 100%;}
-.psyche .psyche11 .cont_with ul li .file_cont{transition: all 0.5s; position: absolute;bottom: -2rem; left: 0;width: 100%;height:2rem;box-sizing: border-box;padding: 0.1rem 0.2rem;font-size: 0.26rem;color:#fff;text-align: center;background: rgba(0, 0, 0, 0.7);}
+.psyche .psyche11 .cont_with ul li .file_cont{transition: all 0.5s; position: absolute;bottom: -2.2rem; left: 0;width: 100%;height:2.2rem;box-sizing: border-box;padding: 0.1rem 0.2rem;font-size: 0.26rem;color:#fff;text-align: center;background: rgba(0, 0, 0, 0.7);}
 .psyche .psyche11 .cont_with ul li:hover .file_cont{bottom: 0rem;}
 @media (max-width: 800px){
     .psyche .psyche1 .ed1_txt{width: 100%;left: 50%;transform: translate(-50%,-50%)}

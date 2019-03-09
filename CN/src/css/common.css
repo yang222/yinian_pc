@@ -985,7 +985,10 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 .news_conts .detail_cont .d_left .wz a:hover{color:#11a0ea}
 .news_conts .detail_cont .d_left .news_tit{padding: 0.4rem 0;color: #333;font-size: 0.4rem;text-align: center;}
 .news_conts .detail_cont .d_left .time{color: #666;text-align: right;font-size: 0.26rem;}
-.news_conts .detail_cont .d_left .all_cont{ padding-top:0.5rem;color: #666;text-align: right;font-size: 0.24rem;text-align: left;}
+.news_conts .detail_cont .d_left .all_cont{ padding-top:0.5rem;color: #666;text-align: right;font-size: 0.24rem;text-align: left;height: auto;  
+    word-wrap:break-word;  
+    word-break:break-all;  
+    overflow: hidden;}
 .news_conts .detail_cont .d_right{display: inline-block;width: 25%;}
 .news_conts .detail_cont .d_right h4{width: 100%; height: 1rem;background: #11a0ea;color: #fff;font-size: 0.42rem;line-height: 1rem;text-align: center;}
 .news_conts .detail_cont .d_right .hydt{
