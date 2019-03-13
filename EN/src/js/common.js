@@ -7,11 +7,17 @@ if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobi
     if(/index.html/.test(window.location.href)){
         window.location.href="./mobile.html"
     }
+    if(/psyche.html/.test(window.location.href)){
+        window.location.href="./mp.html"
+    }
 }
 else {
     /*window.location.href="你的电脑版地址";    */
     if(/mobile.html/.test(window.location.href)){
         window.location.href="./index.html"
+    }
+    if(/mp.html/.test(window.location.href)){
+        window.location.href="./psyche.html"
     }
 }
 
