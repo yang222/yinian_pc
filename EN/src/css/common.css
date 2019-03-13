@@ -1632,7 +1632,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .m_psy .m_psy_cont3 ul li{display: inline-block;width: 48%;margin: 0 1%;vertical-align: top;background: #fff;margin-bottom: 0.5rem;}
 .m_psy .m_psy_cont3 ul li img{width: 100%;height: 5rem;}
 .m_psy .m_psy_cont3 ul li h5{background: #292832;font-size: 0.7rem;height: 1.6rem;width: 100%;line-height: 1.6rem;color: #fff;}
-.m_psy .m_psy_cont3 ul li p{height:11rem;text-align: left;color: #333;font-size: 0.32rem;text-align:justify;}
+.m_psy .m_psy_cont3 ul li p{height: 11rem; text-align: left;color: #333;font-size: 0.4rem;text-align:justify;}
 .m_psy .m_psy_cont4{height: 20rem;background: url("./../images/m_psyche/4/4_18.jpg") no-repeat center center;background-size:cover;box-sizing: border-box; position: relative;}
 .m_psy .m_psy_cont4 .cont{position: absolute; bottom: 2rem;width: 100%;height: auto;}
 .m_psy .m_psy_cont4 .cont img{height: 2.2rem;}
@@ -1671,7 +1671,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
     padding: 1rem;
 }
 .m_psy .m_psy_cont11 p{font-size: 0.34rem;margin-bottom: 0.3rem;}
-.m_psy .m_psy_cont12{text-align: left; height: 25rem;background: url("./../images/m_psyche/12/11_37.jpg") no-repeat center center;background-size: cover;padding: 1rem 0.5rem;box-sizing: border-box;}
+.m_psy .m_psy_cont12{text-align: left;background: url("./../images/m_psyche/12/11_37.jpg") no-repeat center center;background-size: cover;padding: 1rem 0.5rem;box-sizing: border-box;}
 .m_psy .m_psy_cont12 h6{
     width: 4rem;
     height: 1rem;
@@ -1683,5 +1683,5 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
     margin-bottom: 0.2rem;
 }
 .m_psy .m_psy_cont12 li{margin-bottom: 0.2rem;}
-.m_psy .m_psy_cont12 li p{font-size: 0.24rem;color: #fff;}
+.m_psy .m_psy_cont12 li p{font-size: 0.4rem;color: #fff;}
 .m_psy .m_psy_cont13{text-align: left; height: 10rem;background: url("./../images/m_psyche/12/12_38.jpg") no-repeat center center;background-size: cover;padding: 1rem;box-sizing: border-box;}

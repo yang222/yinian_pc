@@ -150,7 +150,7 @@ table {
 @media (max-width: 320px){
   html { font-size: 20px;}
 }
-@media (max-height: 610px){
+@media (min-width: 610px){
   html {
       font-size: 45px;
   }
