@@ -30,7 +30,7 @@ $(function(){
         }else{
             if($(window).width() <= 1150){
                 if($(".header .nav").css("height") =="0px" || $(".header .nav").css("height") ==0){
-                    $(".header .nav").css("height","12rem")
+                    $(".header .nav").css("height","13rem")
                 }else{
                     $(".header .nav").css("height",0)
                     $(".header li.cp").removeClass("open")
