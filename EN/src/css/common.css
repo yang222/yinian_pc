@@ -976,7 +976,7 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
     .english .ta .bg_cont .ta1 .ta_text1{width:100%;margin: 0;padding: 0 0.3rem;box-sizing: border-box;}
     .english .ta .bg_cont .ta2 .ta_text2{width:100%;margin: 0;padding: 0 0.3rem;box-sizing: border-box;}
     .english .ta .bg_cont h5{padding-top: 1rem;}
-    .english .swiper-container{width: 100%; height:5rem ;}
+    .english .swiper-container{width: 100%; height:220px;}
     .english .cj .box .cont h5{padding-top: 0.8rem;}
     .english .cj .box .cont p{padding: 0.1rem 0.3rem 0.2rem;font-size: 0.2rem;}
 }
@@ -1257,7 +1257,7 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
     .finance .finance_cont .xg_cont1 .xg_l{margin-right:0;width: 100%;}
     .finance .finance_cont .xg_cont1 .xg_r{margin-bottom: 0.45rem;width: 100%;}
     .finance .finance_cont li {width: 45%;}
-    .finance .swiper-container{height: 12rem;}
+    .finance .swiper-container{height: 400px;}
     .finance .finance_cont .jytj p{padding: 0 0.1rem;}
     .finance .finance_cont .finance_bg .jys{padding: 0;padding-top: 1rem;}
     .finance .finance_cont .finance_bg .jys li{width: 41%; margin: 0 2%; margin-bottom: 0.5rem;}
@@ -1632,7 +1632,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .m_psy .m_psy_cont3 ul li{display: inline-block;width: 48%;margin: 0 1%;vertical-align: top;background: #fff;margin-bottom: 0.5rem;}
 .m_psy .m_psy_cont3 ul li img{width: 100%;height: 5rem;}
 .m_psy .m_psy_cont3 ul li h5{background: #292832;font-size: 0.7rem;height: 1.6rem;width: 100%;line-height: 1.6rem;color: #fff;}
-.m_psy .m_psy_cont3 ul li p{height: 11rem; text-align: left;color: #333;font-size: 0.4rem;text-align:justify;}
+.m_psy .m_psy_cont3 ul li p{height: 250px; text-align: left;color: #333;font-size: 0.4rem;text-align:justify;}
 .m_psy .m_psy_cont4{height: 20rem;background: url("./../images/m_psyche/4/4_18.jpg") no-repeat center center;background-size:cover;box-sizing: border-box; position: relative;}
 .m_psy .m_psy_cont4 .cont{position: absolute; bottom: 2rem;width: 100%;height: auto;}
 .m_psy .m_psy_cont4 .cont img{height: 2.2rem;}
