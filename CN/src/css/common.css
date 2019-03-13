@@ -1641,7 +1641,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .m_psy .m_psy_cont7 .cont img{height: 0.8rem;}
 
 .m_psy .m_psy_cont8{height: 10rem;background-image: url("./../images/m_psyche/7/7_2.jpg");}
-.m_psy .m_psy_cont8 .cont{bottom: 50%;transform: translateY(-50%);}
+.m_psy .m_psy_cont8 .cont{bottom: 50%;transform: translateY(50%);}
 .m_psy .m_psy_cont8 .cont img{height: 1rem;}
 .m_psy .m_psy_cont9{padding: 1rem 0;}
 .m_psy .m_psy_cont9 h5{font-size: 0.8rem;color: #fff;}
