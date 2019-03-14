@@ -541,7 +541,6 @@ background: url("./../images/index/box.png") no-repeat center center;background-
 }
 .ed2 .ed2_left img{
     width: 100%;
-    height: 60%;
 }
 .title{
     font-size: 0.72rem;
@@ -561,7 +560,8 @@ background: url("./../images/index/box.png") no-repeat center center;background-
     margin-bottom: 0.4rem;
     font-size: 0.5rem;
 }
-.ed2 .ed2_right{display: inline-block;width: 48%;height: 12rem;}
+.ed2 .ed2_right{display: inline-block;width: 48%;height: 12rem; background: url("./../../src/images/ed/ed2_2.jpg") no-repeat center center;background-size: cover;}
+.ed3 .ed2_right{background-image: url("./../../src/images/ed/ed3_1.jpg")}
 .ed2 .ed2_right img {width: 100%; height: 100%;}
 .ed3 .ed2_right{margin-right: 4%};
 .ed3 .ed2_left{margin-right: 0%;background: #fff;}
