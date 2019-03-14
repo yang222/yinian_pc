@@ -336,6 +336,18 @@ body {
 .index .cont{z-index: 10;position: absolute;top: 35%;left: 20%;text-align: left;}
 .index .cont h5{font-size: 0.64rem;color: #11a0ea;padding-top: 0.7rem;font-weight: 600;padding-left: 0.8rem;}
 .index .cont p{font-size: 0.42rem;color: #fff;padding-left: 0.8rem;padding-top: 0rem;}
+
+.index .banner2 a{color: #fff;}
+.index .banner3 .ban_cont  a:first-child{color: #fff; border: none;padding: 0;}
+.index .banner4 a{color: #fff;}
+.index .banner5 a{color: #fff;}
+.index .i_b1{background: url("./../images/index/banner1.jpg") no-repeat center center;background-size: cover;}
+.index .banner2{background: url("./../images/index/banner2.jpg") no-repeat center center;background-size: cover;}
+.index .banner3{background: url("./../images/index/banner3.jpg") no-repeat center center;background-size: cover;}
+.index .banner4{background: url("./../images/index/banner4.jpg") no-repeat center center;background-size: cover;}
+.index .banner5{background: url("./../images/index/banner5.jpg") no-repeat center center;background-size: cover;}
+
+
 .index .index1{background: url("./../images/index/bg2.jpg") no-repeat center center;background-size: cover;height: 100%;width: 100%;position: relative;}
 .index .index1 .index_cont{text-align: left;padding: 0 0.3rem; width: 8.5rem;height: 3.5rem;position: absolute; background: rgba(255, 255, 255, 0.5);top: 50%;right: 10%; margin-top: -1.75rem;}
 .index .index1 .index_cont h5{font-size: 0.46rem;font-weight: 0;padding: 0.8rem 0 0.2rem;font-weight: 600}
@@ -1290,7 +1302,7 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 
 
 /* 手环 */
-.mercury .ed_top{background: url("./../images/mercury/8.jpg") no-repeat center center;background-size: 100% 100%;height: 100%;}
+.mercury .ed_top{background: url("./../images/mercury/8.jpg") no-repeat center center;background-size: cover;height: 100%;}
 .mercury .mercury1_1{position: relative;}
 .mercury .mercury1_1 .ed1_txt{position: absolute;top: 50%;left: 10%;transform: translateY(-50%);padding-top: 0; width: 10rem;}
 .mercury .ed_top .ed1_txt h4{text-align: left;padding-left:15%;margin-bottom: 0.6rem;font-size: 0.62rem;padding-top: 3rem;}

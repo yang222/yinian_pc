@@ -320,6 +320,15 @@ body {
     -webkit-animation: jt 1s infinite linear alternate;}
 .index_jt img{width: 100%; height: 100%;} 
 .index .bg{width: 100%;height: 100%;}
+.index .banner2 a{color: #fff;}
+.index .banner3 .ban_cont  a:first-child{color: #fff; border: none;padding: 0;}
+.index .banner4 a{color: #fff;}
+.index .banner5 a{color: #fff;}
+.index .i_b1{background: url("./../images/index/banner1.jpg") no-repeat center center;background-size: cover;}
+.index .banner2{background: url("./../images/index/banner2.jpg") no-repeat center center;background-size: cover;}
+.index .banner3{background: url("./../images/index/banner3.jpg") no-repeat center center;background-size: cover;}
+.index .banner4{background: url("./../images/index/banner4.jpg") no-repeat center center;background-size: cover;}
+.index .banner5{background: url("./../images/index/banner5.jpg") no-repeat center center;background-size: cover;}
 .index .swiper-slide img{width: 100%;height: 100%;}
 .index .bg{z-index: 10;position: absolute;top: 35%;left: 20%;
     width:6.58rem;height: 4rem;background: url("./../images/index/bg1.png") no-repeat center center;background-size: 100% 100%;}
@@ -1268,7 +1277,7 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 
 
 /* 手环 */
-.mercury .ed_top{background: url("./../images/mercury/8.jpg") no-repeat center center;background-size: 100% 100%;height: 100%;}
+.mercury .ed_top{background: url("./../images/mercury/8.jpg") no-repeat center center;background-size: cover;height: 100%;}
 .mercury .mercury1_1{position: relative;}
 .mercury .mercury1_1 .ed1_txt{position: absolute;top: 50%;left: 10%;transform: translateY(-50%);padding-top: 0; width: 10rem;}
 .mercury .ed_top .ed1_txt h4{text-align: left;padding-left:15%;margin-bottom: 0.6rem;font-size: 0.62rem;padding-top: 3rem;}
