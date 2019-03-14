@@ -22,6 +22,14 @@ else {
 }
 
 
+function toURL(){
+    if(/CN/.test(window.location.href)){
+        window.location.href =  window.location.href.replace(/CN/g,"EN")
+    }
+    if(/EN/.test(window.location.href)){
+        window.location.href =  window.location.href.replace(/EN/g,"CN")
+    }
+}
 
 $(function(){
     $(".header .sq").click(function(){
