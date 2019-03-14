@@ -1135,10 +1135,10 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 }
 
 /* 公司介绍 */
-.company1{background-image: url("./../images/company_inro/img1.jpg");height: 100%;}
+.company1{background: url("./../images/company_inro/img1.jpg")no-repeat center center;background-size: cover;height: 100%;}
 .company1 .ed1_txt h4{padding-top: 2.5rem;padding-bottom: 0.6rem;}
 .company1 .ed1_txt  p{margin-bottom: 0.3rem;padding: 0 0.4rem;}
-.company2{background-image: url("./../images/company_inro/img2.jpg");text-align: center;height: 100%;}
+.company2{background: url("./../images/company_inro/img2.jpg") no-repeat center center;background-size: cover; text-align: center;height: 100%;}
 .company2 .c_left,.company2 .center,.company2 .c_right{margin-top: 0rem; width: 5rem; display: inline-block;vertical-align: top;}
 .company2 .c_left div{text-align: left;padding-left: 0.4rem;padding-top: 0.3rem; box-sizing: border-box; width:4.6rem ;height: 4.6rem;background: url("./../images/company_inro/img3.png") no-repeat center center;background-size:100% 100%;}
 .company2 .c_right div{text-align: left;padding-left: 1.3rem;padding-top: 0.3rem; box-sizing: border-box; width:4.6rem ;height: 4.6rem;background: url("./../images/company_inro/img4.png") no-repeat center center;background-size:100% 100%;}
