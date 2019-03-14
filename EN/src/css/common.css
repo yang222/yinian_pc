@@ -960,6 +960,26 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
     text-align: center;
 }
 .english .cj .box{width: 100%;height: 100%;position: absolute;top:0;left: 0;}
+.english .cj .box .cont{   
+     width: 95%;
+    height: 95%;
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+}
+.english .cj .box .cont h5 {
+    padding-top: 1rem;
+    color: #000;
+    font-size: 0.32rem;
+}
+.english .cj .box .cont p {
+    padding: 0.2rem 1rem 0.3rem;
+    color: #000;
+    font-size: 0.24rem;
+    line-height: 0.5rem;
+}
 .english .cj .swiper-slide{position: relative;}
 .english .ta .bg_cont{font-size: 0;margin-bottom: 0.5rem;}
 .english .ta .bg_cont .ta1{margin-right: 2%; display: inline-block;width: 49%;height: 7rem;background: url("./../images/english/ta1.jpg") no-repeat center center;background-size: 100% 100%;position: relative;}
