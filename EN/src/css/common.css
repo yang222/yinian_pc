@@ -961,21 +961,19 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 }
 .english .cj .box{width: 100%;height: 100%;position: absolute;top:0;left: 0;}
 .english .cj .swiper-slide{position: relative;}
-.english .cj .box .cont{width: 95%;height: 95%; position: absolute;top: 2.5%;left: 2.5%;text-align: center;background: rgba(255, 255, 255, 0.7)}
-.english .cj .box .cont h5{padding-top: 1rem;color: #000;font-size: 0.32rem;}
-.english .cj .box .cont p{padding:0.2rem 1rem 0.3rem;color: #000;font-size: 0.24rem;line-height: 0.5rem;}
-.english .ta .bg_cont .ta1{width: 100%; height: 7rem;background: url("./../images/english/ta1.jpg") no-repeat center center;background-size: 100% 100%;}
-.english .ta .bg_cont .ta2{width: 100%; height: 7rem;background: url("./../images/english/ta2.jpg") no-repeat center center;background-size: 100% 100%;}
-.english .ta .bg_cont .ta1 .ta_text1{float: right;font-size: 0.24rem;width: 40%;padding-right: 0.5rem;text-align: center;}
-.english .ta .bg_cont  h5{padding-top: 2.5rem;font-size: 0.32rem;padding-bottom:0.2rem;}
-.english .ta .bg_cont .ta2 .ta_text2{float: left;font-size: 0.24rem;width: 40%;padding-left: 1.2rem;text-align: center;}
+.english .ta .bg_cont{font-size: 0;margin-bottom: 0.5rem;}
+.english .ta .bg_cont .ta1{margin-right: 2%; display: inline-block;width: 49%;height: 7rem;background: url("./../images/english/ta1.jpg") no-repeat center center;background-size: 100% 100%;position: relative;}
+.english .ta .bg_cont .ta2{display: inline-block;width: 49%;height: 7rem;background: url("./../images/english/ta2.jpg") no-repeat center center;background-size: 100% 100%;position: relative;}
+.english .ta .bg_cont .ta_text1{position: absolute;top: 2.5%;left: 2.5%;width: 95%;height: 95%;background: rgba(255, 255, 255, 0.7);}
+.english .ta .bg_cont .ta_text2{position: absolute;top: 2.5%;left: 2.5%;width: 95%;height: 95%;background: rgba(255, 255, 255, 0.7);}
+.english .ta .bg_cont  h5{padding-top: 1rem;font-size: 0.5rem;padding-bottom:0.2rem;}
+.english .ta .bg_cont  p{font-size: 0.3rem;color: #000;padding: 0 0.3rem;}
 @media (max-width: 800px){
     .english .english_cont{padding: 0;}
     .english .english_cont .detail .d_list{padding:0 0.2rem;}
     .english .english_cont .detail h5{padding: 0.6rem 0.1rem 0.2rem;font-size: 0.36rem;}
-    .english .ta .bg_cont .ta1 .ta_text1{width:100%;margin: 0;padding: 0 0.3rem;box-sizing: border-box;}
-    .english .ta .bg_cont .ta2 .ta_text2{width:100%;margin: 0;padding: 0 0.3rem;box-sizing: border-box;}
-    .english .ta .bg_cont h5{padding-top: 1rem;}
+    .english .ta .bg_cont .ta1,.english .ta .bg_cont .ta2{width: 100%;margin-bottom: 0.5rem;}
+    .english .ta .bg_cont h5{padding-top: 0.5rem;}
     .english .swiper-container{width: 100%; height:220px;}
     .english .cj .box .cont h5{padding-top: 0.8rem;}
     .english .cj .box .cont p{padding: 0.1rem 0.3rem 0.2rem;font-size: 0.2rem;}
@@ -1055,7 +1053,7 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 .teach_plan .plan1 .jt img{width: 0.5rem;}
 .teach_plan .plan1 .plan_cont {font-size: 0;padding: 0 1rem;}
 .teach_plan .plan1 .plan_cont .img{display: inline-block;vertical-align: top;width: 50%;height:10rem ;}
-.teach_plan .plan1 .plan_cont .img img{width: 50%;height: 100%;}
+.teach_plan .plan1 .plan_cont .img img{width: 100%;height: 100%;}
 .teach_plan .plan1 .plan_cont .plan_text{width: 50%;display: inline-block;box-sizing: border-box;padding: 0 1rem}
 .teach_plan .plan1 .plan_cont .plan_text h5{padding: 2rem 0 0.6rem;color: #000;font-size: 0.36rem;font-weight: 600;}
 .teach_plan .plan1 .plan_cont .plan_text p{margin-bottom: 0.8rem;color: #333;font-size: 0.26rem;line-height: 0.56rem;}
