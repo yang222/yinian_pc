@@ -21,11 +21,12 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
     <style>
     .swiper-container1{width: 100%;height: 100%;position: relative;}
+    .swiper-container1 .swiper-slide{height: 100% !important;width: 100% !important;}
     .swiper-pagination1{color: #fff; position: absolute;height:1rem;z-index: 10;bottom: 10%;width: 20%;left: 20%;}
     .swiper-pagination1 .swiper-pagination-current{font-size: 0.4rem;color: #fff;}
     .swiper-pagination1 .swiper-pagination-total{font-size: 0.26rem;color: #fff;}
-    .swiper-button-next{width: 1.5rem;height: 4rem;margin-top: -2rem;opacity: 0;transition: all 0.5s}
-    .swiper-button-prev{width: 1.5rem;height: 4rem;margin-top: -2rem;opacity: 0 !important;cursor: pointer;transition: all 0.5s}
+    .swiper-button-next{width: 1.5rem;height: 4rem;margin-top: -2rem;opacity: 0;}
+    .swiper-button-prev{width: 1.5rem;height: 4rem;margin-top: -2rem;opacity: 0 !important;}
     .swiper-button-next,.swiper-button-prev{background-size: 50% auto;}
     .swiper-button-prev:hover{opacity: 1 !important;}
     .swiper-button-next:hover{opacity: 1 ;}
@@ -611,19 +612,19 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            loop:true,
             pagination: {
                 el: '.swiper-pagination1',
                 type: 'fraction',
-                
             },
             autoplay: auto,
             on:{
                 init: function(){
-                    swiperAnimateCache(this); //隐藏动画元素 
-                    swiperAnimate(this); //初始化完成开始动画
+                    // swiperAnimateCache(this); //隐藏动画元素 
+                    // swiperAnimate(this); //初始化完成开始动画
                 }, 
                 slideChangeTransitionEnd: function(){ 
-                    swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                    // swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
                     //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
                 } 
             },
