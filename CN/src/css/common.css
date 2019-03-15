@@ -777,7 +777,7 @@ font-size: 0.4rem;display: inline-block;border-radius: 0.1rem;margin: 0 auto;
 }
 
 /* 联系我们页面 */
-.contact{background: url("../images/contact/i6rq318wut.jpg") repeat center center;background-size: cover; min-height: 100%;}
+.contact{background: url("../images/contact/i6rq318wut.jpg") repeat center center;background-size: 100% 100%; min-height: 100%;}
 .contact .contact_cont{text-align: left; padding-top:2rem; box-sizing:border-box; width: 100%;font-size: 0; }
 .contact .contact_cont .c_left{
     display: inline-block;
