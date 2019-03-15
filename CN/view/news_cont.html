@@ -138,13 +138,14 @@ $(function(){
             url:config.url+"New/select",
             type:"GET",
             data:{
-                id:url_data.id
+                id:url_data.id,
+                is_cn:"1",
             },
             dataType:"json",
             success:function(data){
                 if(data.status == 200){
                     $("#news_cont .news_tit").html(data.data.title)
-                    $("#news_cont .time").html('发布时间：'+data.data.date+'      发布人：'+data.data.author)
+                    $("#news_cont .time").html('发布时间：'+data.data.date+' &nbsp;&nbsp;&nbsp;     发布人：'+data.data.author)
                     $("#news_cont .all_cont").html(data.data.content)
                 }
                 
@@ -160,6 +161,7 @@ $(function(){
                 pageSize:5,
                 page:1,
                 type:type,
+                is_cn:"1",
             },
             dataType:"json",
             success:function(data){

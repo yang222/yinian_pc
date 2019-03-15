@@ -42,17 +42,17 @@
         <div class="detail_cont">
             <div class="cont_with">
             <div class="d_left" id="news_cont">
-                <div class="d_title"><span class="tit">易念动态</span><span class="wz">当前位置：<a href="./index.html">HOME</a>><a href="./news.html">媒体资讯</a>><a href="javascript:;" id="now_wz">易念动态</a></span></div>
+                <div class="d_title"><span class="tit">NEWS</span><span class="wz">CURRENT LOCATION：<a href="./index.html">HOME</a>><a href="./news.html">MEDIA INFORMATION</a>><a href="javascript:;" id="now_wz">易念动态</a></span></div>
                 <div style="width: 100%;">
-                    <h3 class="news_tit">CES 2019圆满落幕丨Neural FLEXEEG智能头箍PSYCHE与生...</h3>
-                    <p class="time">发布时间：2019-1-22      发布人：小易</p>
+                    <h3 class="news_tit"></h3>
+                    <p class="time"></p>
                     <div class="all_cont" style="width: 100%;">
                         
                     </div>
                 </div>
             </div>
             <div class="d_right">
-                <h4>新闻动态</h4>
+                <h4>NEWS INFORMATION</h4>
                 <div class="hydt" id="hy_news">
                    
                 </div>
@@ -130,21 +130,22 @@
 <script>
 $(function(){
     var url_data = GetRequest("?"+window.location.href.split("?")[1]);
-    $("#news_cont .tit").html(url_data.type==2?'易念动态':'行业动态')
-    $("#now_wz").html(url_data.type==2?'易念动态':'行业动态')
+    $("#news_cont .tit").html(url_data.type==2?'NEWS':'Industry News')
+    $("#now_wz").html(url_data.type==2?'NEWS':'Industry News')
     function getData(){
         $.ajax({
             url:config.url+"New/select",
             type:"GET",
             data:{
-                id:url_data.id
+                id:url_data.id,
+                is_cn:"2",
             },
             dataType:"json",
             success:function(data){
                 if(data.status == 200){
-                    $("#news_cont .news_tit").html(data.data.title)
-                    $("#news_cont .time").html('发布时间：'+data.data.date+'      发布人：'+data.data.author)
-                    $("#news_cont .all_cont").html(data.data.content)
+                    $("#news_cont .news_tit").html(data.data.e_title)
+                    $("#news_cont .time").html('Release time：'+data.data.date+' &nbsp;&nbsp;&nbsp;     Publisher：'+data.data.e_author)
+                    $("#news_cont .all_cont").html(data.data.e_content)
                 }
                 
             }
@@ -159,6 +160,7 @@ $(function(){
                 pageSize:5,
                 page:1,
                 type:type,
+                is_cn:"2"
             },
             dataType:"json",
             success:function(data){
@@ -166,17 +168,17 @@ $(function(){
                 if(data.status == 200){
                     if(type == 2){
                         $("#yn_news").html('')
-                        var html = '<h5><span class="jt"></span>易念新闻 <ul>'
+                        var html = '<h5><span class="jt"></span>News <ul>'
                         for(var i=0;i<data.data.length;i++){
-                            html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].title+'</a></li>'
+                            html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].e_title+'</a></li>'
                         }
                         html+='</ul></h5>'
                         $("#yn_news").html(html)
                     }else{
                         $("#hy_news").html('')
-                        var html = '<h5><span class="jt"></span>行业新闻 <ul>'
+                        var html = '<h5><span class="jt"></span>Industry News <ul>'
                         for(var i=0;i<data.data.length;i++){
-                            html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].title+'</a></li>'
+                            html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].e_title+'</a></li>'
                         }
                         html+='</ul></h5>'
                         $("#hy_news").html(html)

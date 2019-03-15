@@ -65,7 +65,7 @@
             <div class="news_left">
                 <div class="news_nav" id="news_nav">
                     <a href="javascript:;" class="a1 active"><img src="../src/images/news/选择(2).png" alt=""> News</a>
-                    <a href="javascript:;" class="a2"><img src="../src/images/news/选择(2).png" alt=""> Media Reports</a>
+                    <a href="javascript:;" class="a2"><img src="../src/images/news/选择(2).png" alt=""> Industry News</a>
                 </div>
                 <div class="l_list">
                     <ul id="news_data">
@@ -214,7 +214,8 @@
                         pageSize:5,
                         page:pages,
                         type:type,
-                        random:new Date().getTime()
+                        random:new Date().getTime(),
+                        is_cn:"2"
                     },
                     dataType:"json",
                     success:function(data){
@@ -223,16 +224,16 @@
                             if(data.data.length > 0){
                                 for(var i = 0;i<data.data.length;i++){
                                     var html = '<li><div class="img"> <img src="'+(data.data[i].image_url==""||data.data[i].image_url==null ?'':data.data[i].image_url[0].url)+'" alt=""></div>'+
-                                    '<div class="l_cont"> <h5>'+data.data[i].title+'</h5>'+
-                                        '<span>发布时间：'+data.data[i].date+'      发布人：'+data.data[i].author+'</span>'+
-                                        '<p>'+data.data[i].about+'</p>'+
-                                        '<a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'" class="toread">阅读全文</a>'+
+                                    '<div class="l_cont"> <h5>'+data.data[i].e_title+'</h5>'+
+                                        '<span>Release time：'+data.data[i].date+'  &nbsp;&nbsp;    Publisher：'+data.data[i].e_author+'</span>'+
+                                        '<p>'+data.data[i].e_about+'</p>'+
+                                        '<a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'" class="toread">Read</a>'+
                                     '</div></li>'
                                     $("#news_data").append(html)
                                 }
                                 $("#page").initPage(Number(data.totalNum),pages,change);
                             }else{
-                                $("#news_data").html("<li style='color:#666;font-size:0.36rem;text-align:center;border:none;'>暂无数据！</li>")
+                                $("#news_data").html("<li style='color:#666;font-size:0.36rem;text-align:center;border:none;'>NO NEWS！</li>")
                             }
                             
                         }
@@ -252,17 +253,18 @@
                         pageSize:5,
                         page:pages,
                         type:type,
-                        random:new Date().getTime()
+                        random:new Date().getTime(),
+                        is_cn:"2",
                     },
                     dataType:"json",
                     success:function(data){
                         $("#news_list").html("");
                         if(data.status == 200){
                             if(data.data.length > 0){
-                                var html = '<h6>'+(type==1?"行业动态":"易念动态")+'</h6><ul>'
+                                var html = '<h6>'+(type==1?"Industry News":"NEWS")+'</h6><ul>'
                                 for(var i = 0;i<data.data.length;i++){
                                 
-                                    html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].title+'</a></li>'
+                                    html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].e_title+'</a></li>'
                                 }
                                 html+='</ul>'
                             }
