@@ -155,52 +155,84 @@
             <p class="b2">Some pictures of this site are transferred from the network. If there is any infringement, please contact the author to delete them. Thank you!</p>
         </div>
     </div>
+    <div class="zp_fix" id="zp_fix" onclick="$('#zp_fix').hide()">
+        <div class="zpyq">
+            <div><span>Salary：</span><p class="xz"></p></div>
+            <div><span>Job description:</span><p class="ms"></p></div>
+            <div><span>Job requirements:</span><p class="yq"></p> </div>
+        </div>
+    </div>
 </body>
 <script>
-    new WOW().init();
-    $(function(){
-        var pages = 1;
-        function change(dd){
-            pages = dd;
-            getData();
-        }  
-        
-        function getData(){
-            $("#zp_cont").html("");
-            $.ajax({
-                url:config.url+"Recruit/lists",
-                type:"GET",
-                data:{
-                    pageSize:10,
-                    page:pages,
-                },
-                dataType:"json",
-                success:function(data){
-                    if(data.status == 200){
-                        if(data.data.length > 0){
-                            for(var i = 0 ;i<data.data.length;i++){
-                                var html = '<li><a href="javascript:;"><p>'+data.data[i].position+'</p> <span>'+data.data[i].date+'</span></a></li>';
-                                $("#zp_cont").append(html)
+        new WOW().init();
+        $(function(){
+            var pages = 1;
+            function change(dd){
+                pages = dd;
+                getData();
+            }  
+            
+            function getData(){
+                $("#zp_cont").html("");
+                $.ajax({
+                    url:config.url+"Recruit/lists",
+                    type:"GET",
+                    data:{
+                        pageSize:10,
+                        page:pages,
+                        is_cn:"2"
+                    },
+                    dataType:"json",
+                    success:function(data){
+                        if(data.status == 200){
+                            if(data.data.length > 0){
+                                for(var i = 0 ;i<data.data.length;i++){
+                                    var html = '<li data-id="'+data.data[i].id +'"><a href="javascript:;"><p>'+data.data[i].e_position+'</p> <span>'+data.data[i].date+'</span></a></li>';
+                                    $("#zp_cont").append(html)
+                                }
+                                var page_cont = '<div class="pages"><ul class="page clearfix" maxshowpageitem="10" pagelistcount="10"  id="page"></ul></div>'
+                                $("#zp_cont").append(page_cont)
+                                $("#page").initPage(data.totalNum,pages,change);
+                            }else{
+                                $("#zp_cont").remove();
+                                $(".join_us .want_you .title").eq(0).css("padding-top","5rem")
+                                // $("#page").initPage(10,1,change);
                             }
-                            var page_cont = '<div class="pages"><ul class="page clearfix" maxshowpageitem="10" pagelistcount="10"  id="page"></ul></div>'
-                            $("#zp_cont").append(page_cont)
-                            $("#page").initPage(data.totalNum,pages,change);
-                        }else{
-                            $("#zp_cont").remove();
-                            $(".join_us .want_you .title").eq(0).css("padding-top","5rem")
-                            // $("#page").initPage(10,1,change);
+    
                         }
-
+                        $("#zp_cont li a").click(function(){
+                            var id=$(this).parent().attr("data-id");
+                            $.ajax({
+                                url:config.url+"Recruit/select",
+                                type:"GET",
+                                data:{
+                                    id:id,
+                                    is_cn:"2"
+                                },
+                                dataType:"json",
+                                success:function(data){
+                                    if(data.status == 200){
+                                        $("#zp_fix .xz").text(data.data.payStart+'-'+data.data.payEnd)
+                                        $("#zp_fix .ms").text(data.data.e_content)
+                                        $("#zp_fix .yq").text(data.data.e_require)
+                                        $("#zp_fix").show();
+                                    }
+                                    
+                                },
+                                error:function(){
+                                  
+                                }
+                            })   
+                        })
+                    },
+                    error:function(){
+                        $("#zp_cont").remove();
+                        $(".join_us .want_you .title").eq(0).css("padding-top","5rem")
                     }
-                    
-                },
-                error:function(){
-                    $("#zp_cont").remove();
-                    $(".join_us .want_you .title").eq(0).css("padding-top","5rem")
-                }
-            })   
-        }
-        getData();
-    })
-</script>
+                })   
+            }
+            getData();
+          
+        })
+    </script>
 </html>

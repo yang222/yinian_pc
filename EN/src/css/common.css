@@ -709,7 +709,6 @@ background: url("./../images/index/box.png") no-repeat center center;background-
 .join_us .we_do ul li h5{font-size: 0.3rem;color: #333;margin-bottom: 0.2rem;}
 .join_us .we_do ul li p{font-size: 0.2rem;color: #333;}
 .join_us .want_you {
-    height: 15.5rem;
     min-height: 15.5rem;
     width: 100%;
     background: url("./../images/join_us/want_u.jpg") no-repeat center center;
@@ -736,6 +735,15 @@ background: url("./../images/index/box.png") no-repeat center center;background-
 .join_us .want_you ul li  a:hover p{
     color: #11a0ea;
 }
+
+.zp_fix{
+    position: fixed;z-index: 20;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.zp_fix .zpyq{text-align: left; font-size: 0.26rem; width: 50%; height: auto;padding: 0.5rem;box-sizing: border-box;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background: #fff;border-radius: 0.3rem;}
+.zp_fix .zpyq span{display: inline-block;vertical-align: top;width: 2.5rem;font-size: 0.24rem;}
+.zp_fix .zpyq p{display: inline-block;width: 70%;}
+.zp_fix .zpyq div{margin-bottom: 0.3rem;}
 @media (max-width: 800px){
     .join_us .want_you .zp_cont{width: 90%;}
     .page .pageItemDisable,.page .pageItemActive{padding: 0.1rem 0.3rem;font-size: 0.26rem;}
@@ -744,6 +752,9 @@ background: url("./../images/index/box.png") no-repeat center center;background-
     .join_us .want_you .zp_cont>li{height: 1.2rem;}
     .join_us .want_you{height: 22rem;}
     .join_us .we_do .zp_cont>li{width: 90%;}
+    .zp_fix .zpyq{width: 95%;}
+    .zp_fix .zpyq span{width: 4.2rem;}
+    .zp_fix .zpyq p{width: 65%;}
  }
 
 /* 开发者平台 */
