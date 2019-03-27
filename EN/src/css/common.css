@@ -740,7 +740,7 @@ background: url("./../images/index/box.png") no-repeat center center;background-
     position: fixed;z-index: 20;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.7);
     display: none;
 }
-.zp_fix .zpyq{text-align: left; font-size: 0.26rem; width: 50%; height: auto;padding: 0.5rem;box-sizing: border-box;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background: #fff;border-radius: 0.3rem;}
+.zp_fix .zpyq{text-align: left; font-size: 0.26rem; width: 60%; height: auto;padding: 0.5rem;box-sizing: border-box;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background: #fff;border-radius: 0.3rem;}
 .zp_fix .zpyq span{display: inline-block;vertical-align: top;width: 2.5rem;font-size: 0.24rem;}
 .zp_fix .zpyq p{display: inline-block;width: 70%;}
 .zp_fix .zpyq div{margin-bottom: 0.3rem;}
@@ -1727,3 +1727,166 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .m_psy .m_psy_cont12 li{margin-bottom: 0.2rem;}
 .m_psy .m_psy_cont12 li p{font-size: 0.4rem;color: #fff;}
 .m_psy .m_psy_cont13{text-align: left; height: 10rem;background: url("./../images/m_psyche/12/12_38.jpg") no-repeat center center;background-size: cover;padding: 1rem;box-sizing: border-box;}
+
+
+
+
+
+/* //公司简介 */
+.company_into {height: auto;}
+.company_into .company_top{
+    height: 12rem;background: url("./../images/company_inro/company4.jpg") no-repeat center center;background-size: cover;position: relative;
+}
+.company_into .company_top .top_cont{width: 60%; padding:1.5rem 1rem;background: rgba(0, 0, 0, 0.7);position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);color: #fff;}
+.company_into .com_tit{margin-bottom:0.5rem;display: inline-block;font-size: 0.56rem;font-weight: 600;padding: 0.3rem 1rem;border-bottom: 1px solid #fff;}
+.company_into .company_top .top_cont p{font-size: 0.26rem;margin-top: 0.2rem;}
+.company_into .company_top img{position: absolute;bottom: -0.5rem;left: 50%;transform: translateX(-50%);width: 1rem; height: 1rem;}
+.company_into .company_into1{padding: 1rem 0;}
+.company_into .company_into1 .com_tit{border-color: #000;}
+.company_into .company_into1 ul{font-size: 0}
+.company_into .company_into1 ul li{display: inline-block;width:21%;margin: 0 1.5%;box-shadow: 0 0 10px 0px #000;overflow: hidden;}
+.company_into .company_into1 ul li img{width: 100%;}
+.company_into .company_into1 ul li h6{height: 1.2rem;background: #2b2a30;font-size: 0.4rem;color: #fff;font-weight: 600;line-height: 1.2rem;}
+.company_into .company_into1 ul li p{height:4rem;padding: 0.3rem;box-sizing: border-box;font-size: 0.26rem;color: #999999;text-align: left;}
+.company_into .company_into2{background: #292929;padding: 1rem 0;}
+.company_into .company_into2 h5{font-size: 0.56rem;color: #fff;font-weight: 600;margin-bottom: 0.5rem;}
+.company_into .company_into2 p{font-size: 0.3rem;color: #fff;line-height: 0.8rem;margin-bottom: 1rem;padding:0 0.5rem;}
+.company_into .company_into2 img{width: 75%;}
+.company_into .company_into3{padding: 1rem 0 0;font-size: 0;}
+.company_into .company_into3 .com_tit{border-color: #000;}
+.company_into .company_into3 p{font-size: 0.3rem;line-height: 0.6rem;margin-bottom: 1rem;padding:0 0.5rem;}
+.company_into .company_into3 p span{font-weight: 600;}
+.company_into .company_into3 img{width: 85%;}
+@media (max-width: 700px){
+    .company_into .company_top {height: 18rem;}
+    .company_into .company_top .top_cont{width: 90%;}
+    .company_into .company_into1 ul li{width: 90%;margin-bottom: 0.5rem;}
+    .company_into .company_into1 ul li p{height: 5rem;}
+    .company_into .company_into3 p{line-height: 1rem;}
+    .company_into .company_into2 p{line-height: 1rem;}
+}
+
+/* //顶尖少儿在线英语 */
+
+.english .english_top{height: 10rem;}
+.english .english1{font-size: 0;padding: 1rem 0;background: url("./../../src/images/english/background.png") no-repeat 80% 5%;background-size: auto 3rem;}
+.english .english1 .left{display: inline-block;vertical-align: top;width: 50%;height: 10rem;background: url("./../../src/images/english/img1.jpg") no-repeat center center;background-size: cover;}
+.english .english1 .right{display: inline-block;vertical-align: top;width: 50%;box-sizing: border-box;padding: 0 1rem;text-align: left;}
+.english .english1 .right h5{font-size: 0.44rem;color: #000;font-weight: 600;margin-top: 0.5rem;}
+.english .english1 .right h6{font-size: 0.34rem;margin-top: 0.5rem;margin-bottom: 0.5rem;}
+.english .english1 .right p{font-size: 0.26rem;}
+.english .english2{padding: 1rem 0;}
+.english .eng_tit{font-size: 0.46rem;color: #000;font-weight: 600;}
+.english .line{display: inline-block;width: 4rem;height: 1px;background: #000;margin: 0.5rem;}
+.english .english2 .english2_cont div{
+    display: inline-block;
+    width: 46%;
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    background: url("./../images/english/bg.jpg") no-repeat center center;background-size: cover;vertical-align: top;
+}
+.english .english2 .english2_cont div:first-child{margin-right: 5%}
+.english .english2 .english2_cont h6{font-size: 0.34rem;font-weight: 600;margin-bottom: 0.3rem;}
+.english .english2 .english2_cont p{font-size: 0.24rem;text-align: left;height: 4rem;}
+.english .english3{padding: 1rem 0;background: url("./../images/english/eng2.jpg") no-repeat center center;background-size: cover;}
+.english .english3 h5{color: #fff}
+.english .english3 .line{background: #fff;}
+.english .english3 .box .cont{background:rgba(255, 255, 255, 0.8);}
+.english .english4{padding: 1rem 0;}
+.english .english4 .english4_1{position: relative;text-align: left;padding: 1rem 0;height: 5.5rem;box-sizing: border-box;}
+.english .english4 .english4_1 .e_line{display: inline-block;width: 1rem;height: 1px;background: #000;}
+.english .english4 .english4_1 img{position: absolute;bottom: -0.5rem;right: 10%;width: 40%;z-index: 10;}
+.english .english4 .english4_1 h6{font-size: 0.34rem; font-weight: 600;padding-left: 0.5rem;margin: 0.5rem 0 0.3rem;width: 45%;}
+.english .english4 .english4_1 p{font-size: 0.26rem; padding-left: 0.5rem; width: 45%;}
+.english .english4 .english4_2{height: 6rem;position: relative;padding: 2rem 0;}
+.english .english4 .english4_2 .bg{height: 6rem;box-sizing: border-box;border: 2px solid #11a0ea;}
+.english .english4 .english4_2 .english4_2_cont{position: absolute;top: 0;width: 90%;height: 100%;left:5%;background: #558bb1;padding: 1rem 2rem;box-sizing: border-box;}
+.english .english4 .english4_2 .e2_cont{
+    height: 100%;
+    width: 100%;
+    background: url("./../../src/images/english/eng4.jpg") no-repeat center center;background-size: cover;
+    position: relative;
+}
+.english .english4 .english4_2 .e2_cont .e2_po{position: absolute;bottom: 0.6rem;left: 50%;transform: translate(-50%);width: 80%;}
+.english .english4 .english4_2 .e2_cont .e2_po h6{font-size: 0.34rem;color: #fff;margin-bottom: 0.3rem;}
+.english .english4 .english4_2 .e2_cont .e2_po p{font-size: 0.26rem;color: #fff;}
+@media (max-width: 700px){
+    .english .english1 .left,.english .english1 .right{width: 90%;}
+    .english .english2 .english2_cont div{width: 90%;margin-right: 0 !important;padding: 1rem;}
+    .english .english2 .english2_cont p{height: 10rem;}
+    .english .swiper-container{height: 8rem;}
+    .english .english4 .english4_1{height: 12rem;}
+    .english .english4 .english4_1 p{width: 90%;}
+    .english .english4 .english4_1 h6{width: 90%;}
+    .english .english4 .english4_2 .english4_2_cont{padding: 1rem;}
+}
+
+/* 金融减压室 */
+.finance {height: auto;}
+.finance .finance_top{background-image: url("./../images/finance/fin1.jpg");height: 10rem;}
+.finance .finance1{padding: 1rem 0;font-size: 0}
+.finance .finance1 .left,.finance .finance1 .right{display: inline-block;height: 8.5rem; width: 50%;vertical-align: top;}
+.finance .finance1 .left{background: url("./../images/finance/fin2.jpg") no-repeat center center;background-size:cover; width: 40%;}
+.finance .finance1 .right{margin-top: 0rem; height: 8.5rem;margin-left: 5%;width: 54%; background: url("./../images/finance/fin3.png") no-repeat center center;background-size:100% 100%; box-sizing: border-box;padding: 0.6rem;text-align: left;}
+.finance .finance1 .right h6{font-size: 0.34rem;font-weight: 600;color: #000;margin: 0.3rem 0;}
+.finance .finance1 .right p{font-size: 0.28rem;color: #000;}
+.finance .fin_tit{font-size: 0.46rem;color: #000;font-weight: 600;}
+.finance .line{display: inline-block;width: 4rem;height: 1px;background: #000;margin: 0.3rem;}
+.finance .finance2{padding: 0.5rem 0;}
+.finance .finance2 ul{font-size: 0;}
+.finance .finance2 ul li{display: inline-block;width: 25%; margin: 3%;vertical-align: top;}
+.finance .finance2 ul li img{width: 100%;}
+.finance .finance2 ul li h6{font-size: 0.34rem;color: #000;margin: 0.2rem 0;}
+.finance .finance2 ul li p{font-size: 0.28rem;color: #333;}
+.finance .finance3{
+    padding: 1rem 0 2rem; background: url("./../images/finance/fin9.jpg") no-repeat center center;background-size: cover;
+}
+.finance .finance3 .cont_with{font-size: 0}
+.finance .finance3 .cont_with .left{display: inline-block;vertical-align: top;width: 60%;padding: 0 1rem 0 1.5rem;box-sizing: border-box;text-align:left}
+.finance .finance3 .left .fin_tit{color: #fff;margin-top: 0.5rem;}
+.finance .finance3 .left .line{background: #fff;margin-left: 0;width: 1.5rem;}
+.finance .finance3 .left p{font-size: 0.26rem;color: #fff;margin-top: 0.5rem;}
+.finance .finance3 .cont_with .right{width: 40%;display: inline-block;}
+.finance .finance3 .cont_with .right img{width: 100%;}
+.finance .finance4{padding: 0.5rem 0;}
+.finance .finance4 .finance4_top{font-size: 0;}
+.finance .finance4 .finance4_top .left{text-align: left;display: inline-block;width: 50%;box-sizing: border-box;padding-right: 1rem;}
+.finance .finance4 .finance4_top .right{text-align: left;display: inline-block;width: 50%;vertical-align: top;position: relative;height: 6rem;}
+.finance .finance4 .finance4_top .right img{position: absolute;width: 75%; top: -1rem;right:0;}
+.finance .finance4 .finance4_top .left .line{margin: 0;margin-bottom: 0.3rem;}
+.finance .finance4 .finance4_top .left h6{font-size: 0.34rem;color: #000;margin: 0.6rem 0 0.2rem;}
+.finance .finance4 .finance4_top .left p{font-size: 0.28rem;color: #333;}
+.finance .finance4 .finance4_bot{text-align: left;padding-top: 1rem;}
+.finance .finance4 .finance4_bot h6{font-size: 0.28rem; font-weight: 600;}
+.finance .finance4 .finance4_bot ul {font-size: 0;padding-top: 1rem;}
+.finance .finance4 .finance4_bot ul li{display:inline-block;vertical-align: top;width: 22%;margin: 1.5%;text-align: center;}
+.finance .finance4 .finance4_bot ul li img{ width: 100%;}
+.finance .finance4 .finance4_bot ul li h6{font-weight: 100;margin-top: 0.3rem;}
+.finance .finance5{padding: 1rem 0;background: url("./../images/finance/fin10.jpg") no-repeat center center;background-size: cover;}
+.finance .finance5 .fin_tit{color: #fff;}
+.finance .finance5 .line{background: #fff;}
+.finance .finance5 .swiper-container{margin: 0 auto;margin-top: 1rem;}
+.finance .finance5 .swiper-slide {display:block;}
+.finance .finance5 .swiper-container .swiper-slide{background: none;}
+.finance .finance5 .swiper-container .swiper-slide h5{color: #fff;}
+.finance .finance5 .swiper-container .swiper-slide p{color: #fff;}
+.finance .finance6{padding: 1rem 0;}
+.finance .finance6 #certify .swiper-slide {display:block;}
+.finance .finance6 #certify .swiper-slide img{height: auto;}
+.finance .finance6 #certify .swiper-slide h6{font-size: 0.34rem;font-weight: 600;margin: 0.5rem 0 0rem;}
+.finance .finance6 #certify .swiper-slide p{font-size: 0.26rem;margin: 0 !important;line-height: 0.5rem;padding-bottom: 0.2rem; padding: 0 0.2rem;}
+@media (max-width: 700px){
+    .finance .finance1 .left{width: 90%;}
+    .finance .finance1 .right{width: 95%;height: 15rem;margin-left: 0;margin-top: 0.5rem;}
+    .finance .finance3 .cont_with .right{width: 90%;}
+    .finance .finance3 .cont_with .left{width: 90%;padding: 0;margin-bottom: 0.5rem;}
+    .finance .finance2 ul li{width: 60%;}
+    .finance .finance4 .finance4_top .left{width: 90%;}
+    .finance .finance4 .finance4_top .right{width: 90%;margin-top: 0.5rem;height: auto;}
+    .finance .finance4 .finance4_top .right img{width: 100%;top: 0;position: relative;}
+    .finance .finance4 .finance4_bot ul li{width: 46%;}
+    .finance .swiper-container{height: 12rem !important;}
+    #certify{width: 100% !important;}
+    #certify .swiper-slide{width: 200px !important;}
+}
