@@ -10,7 +10,7 @@ body{text-align: center;}
     width: 100%;
     z-index: 1000;
     background: #181818;
-    box-shadow: 0 1px 13px 3px #333;
+    /* box-shadow: 0 1px 13px 3px #333; */
 }
 .header .logo{
     float: left;
@@ -148,16 +148,16 @@ body{text-align: center;}
 /* 底部 */
 .foot{
     width: 100%;
-    height: 10rem;
+    height: auto;
     background: url("./../images/foot_bg.jpg") no-repeat center center;
     background-size: 100% 100%;
     box-sizing: border-box;
-    padding: 1.2rem 0.5rem;
+    padding:0.5rem 0.5rem;
     font-size: 0;
 }
 .foot_top{
-    padding-bottom: 0.8rem;
-    padding-top: 0.6rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.4rem;
     border-bottom: 1px solid #555;
 }
 .foot .foot_left{width: 20%;display: inline-block;vertical-align: top;}
@@ -228,7 +228,7 @@ body{text-align: center;}
     font-size: 0.28rem;
 }
 .foot .foot_b {
-    padding-top: 0.6rem;
+    padding-top: 0.3rem;
     text-align: center; 
 }
 .foot .foot_b .b1{font-size: 0.28rem;color: #fff;margin-bottom: 0.2rem;}
@@ -1889,4 +1889,34 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
     .finance .swiper-container{height: 12rem !important;}
     #certify{width: 100% !important;}
     #certify .swiper-slide{width: 200px !important;}
+}
+
+
+
+/* 中小学教育方案 */
+.teach_plan{background: #fff;}
+.teach_plan .plan1{height: 9rem; width: 100%;background: url("./../../src/images/teach_plan/plan1.jpg") no-repeat center center;background-size: cover;}
+.teach_plan .plan1 .pos_abs{padding-top: 0 !important;}
+.teach_plan .plan2 .cont_with{font-size: 0}
+.teach_plan .plan2{padding: 1rem 0;}
+.teach_plan .plan2 .cont_with .left,.teach_plan .plan2 .cont_with .right {display: inline-block;width: 50%;height: 8rem;vertical-align: top;}
+.teach_plan .plan2 .cont_with .left{box-sizing: border-box;padding-top: 0.5rem;padding-right: 1rem;text-align: left;background: url("./../../src/images/teach_plan/plan3.jpg") no-repeat 0 0;background-color: #fff;}
+.teach_plan .plan2 .cont_with .left h6{font-size: 0.34rem;font-weight: 600;margin-bottom:0.5rem;}
+.teach_plan .plan2 .cont_with .left p{font-size: 0.28rem;}
+.teach_plan .plan2 .cont_with .right {background: url("./../../src/images/teach_plan/plan2.jpg") no-repeat center center;background-size: cover;}
+
+.teach_plan .fin_tit{font-size: 0.46rem;color: #000;font-weight: 600;}
+.teach_plan .line{display: inline-block;width: 4rem;height: 1px;background: #000;margin: 0.3rem;}
+.teach_plan .plan3{padding: 1rem 0;background: url("./../../src/images/teach_plan/plan4.jpg") no-repeat center center;background-size: cover;}
+.teach_plan .plan3 .fin_tit{color: #fff;}
+.teach_plan .plan3 .line{background: #fff;margin-bottom: 1rem;}
+.teach_plan .plan3 .swiper-slide{background: none;display: block;}
+.teach_plan .plan3 .swiper-slide img {width: 100%;}
+.teach_plan .plan3 .swiper-slide h5{font-size: 0.3rem;color: #fff;margin: 0.1rem 0;}
+.teach_plan .plan3 .swiper-slide  p{font-size: 0.26rem;color: #fff;text-align: left;padding: 0 0.2rem;}
+.teach_plan .plan4 {padding: 1rem 0;}
+.teach_plan .plan4 .text{font-size: 0.28rem;width: 70%;margin: 0 auto;text-indent: 0.56rem;text-align:left;margin-top: 0.2rem;}
+@media (max-width: 700px){
+    .teach_plan .plan2 .cont_with .left{width: 90%;height: auto;}
+    .teach_plan .plan2 .cont_with .right{width: 90%;margin-top: 1rem;}
 }
