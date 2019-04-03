@@ -1,6 +1,6 @@
 var config={
     // url:"http://www.yinian.com:8080/Admin/",
-    url:"http://106.15.229.159:9001/Admin/"
+    url:"http://api.neu-flex.com/Admin/"
 }
 if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
     /*window.location.href="你的手机版地址";*/
