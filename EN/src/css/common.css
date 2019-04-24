@@ -349,8 +349,8 @@ body {
 
 
 .index .index1{background: url("./../images/index/bg2.jpg") no-repeat center center;background-size: cover;height: 100%;width: 100%;position: relative;}
-.index .index1 .index_cont{text-align: left;padding: 0 0.3rem; width: 8.5rem;height: 3.5rem;position: absolute; background: rgba(255, 255, 255, 0.5);top: 50%;right: 10%; margin-top: -1.75rem;}
-.index .index1 .index_cont h5{font-size: 0.46rem;font-weight: 0;padding: 0.8rem 0 0.2rem;font-weight: 600}
+.index .index1 .index_cont{text-align: left;padding: 0 0.3rem; width: 10rem;height: 3.5rem;position: absolute; background: rgba(255, 255, 255, 0.5);top: 50%;right: 10%; margin-top: -1.75rem;}
+.index .index1 .index_cont h5{font-size: 0.46rem;font-weight: 0;padding: 0.5rem 0 0.2rem;font-weight: 600}
 .index .index1 .index_cont p{font-size: 0.32rem;color: #333}
 .index .index2{background-image:url("./../images/index/bg3.jpg")}
 .index .index2 .index_cont{left: 20%}
@@ -1446,7 +1446,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .psyche .psyche3 .cont_with{font-size: 0}
 .psyche .psyche3 .title{padding-top: 15%;font-size: 0.52rem;}
 .psyche .psyche3 .text{font-size: 0.32rem;padding: 0.4rem 0 0.6rem;}
-.psyche .psyche3 .img{margin-top: 0; width: 23%;margin: 0 2% 0 0;box-shadow: 0 0 10px 5px #dedede;height: 10rem;margin-bottom: 0.2rem;}
+.psyche .psyche3 .img{margin-top: 0; width: 23%;margin: 0 2% 0 0;box-shadow: 0 0 10px 5px #dedede;height: 8rem;margin-bottom: 0.2rem;}
 .psyche .psyche3 .img:last-child{margin-right: 0;}
 .psyche .psyche3 .img img{width: 100%;height: 4rem;}
 .psyche .psyche3 .img .img_c h5{height: 1rem;background: #333;color: #fff;font-size: 0.48rem;font-weight: 600;line-height: 1rem;}
@@ -1555,7 +1555,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .psyche .psyche11 .cont_with ul li{display: inline-block;width: 45%;margin:0 0.4rem;position: relative; height: 5rem; cursor: pointer; margin-bottom: 0.4rem;overflow: hidden;}
 .psyche .psyche11 .cont_with ul li .file_cont h6{font-weight: 600;font-size: 0.28rem;}
 .psyche .psyche11 .cont_with ul li img{width: 100%;height: 100%;}
-.psyche .psyche11 .cont_with ul li .file_cont{transition: all 0.5s; position: absolute;bottom: -2.2rem; left: 0;width: 100%;height:2.2rem;box-sizing: border-box;padding: 0.1rem 0.2rem;font-size: 0.26rem;color:#fff;text-align: center;background: rgba(0, 0, 0, 0.7);}
+.psyche .psyche11 .cont_with ul li .file_cont{transition: all 0.5s; position: absolute;bottom: -1.5rem; left: 0;width: 100%;height:1.5rem;box-sizing: border-box;padding: 0.1rem 0.2rem;font-size: 0.26rem;color:#fff;text-align: center;background: rgba(0, 0, 0, 0.7);}
 .psyche .psyche11 .cont_with ul li:hover .file_cont{bottom: 0rem;}
 @media (max-width: 800px){
     .psyche .psyche1 .ed1_txt{width: 100%;left: 50%;transform: translate(-50%,-50%)}
@@ -1788,7 +1788,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 }
 .english .english2 .english2_cont div:first-child{margin-right: 5%}
 .english .english2 .english2_cont h6{font-size: 0.34rem;font-weight: 600;margin-bottom: 0.3rem;}
-.english .english2 .english2_cont p{font-size: 0.24rem;text-align: left;height: 4rem;}
+.english .english2 .english2_cont p{font-size: 0.24rem;text-align: center;height: 2rem;}
 .english .english3{padding: 1rem 0;background: url("./../images/english/eng2.jpg") no-repeat center center;background-size: cover;}
 .english .english3 h5{color: #fff}
 .english .english3 .line{background: #fff;}
@@ -1901,7 +1901,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .teach_plan .plan2{padding: 1rem 0;}
 .teach_plan .plan2 .cont_with .left,.teach_plan .plan2 .cont_with .right {display: inline-block;width: 50%;height: 8rem;vertical-align: top;}
 .teach_plan .plan2 .cont_with .left{box-sizing: border-box;padding-top: 0.5rem;padding-right: 1rem;text-align: left;background: url("./../../src/images/teach_plan/plan3.jpg") no-repeat 0 0;background-color: #fff;}
-.teach_plan .plan2 .cont_with .left h6{font-size: 0.34rem;font-weight: 600;margin-bottom:0.5rem;}
+.teach_plan .plan2 .cont_with .left h6{font-size: 0.34rem;font-weight: 600;margin-bottom:0.5rem;padding-top: 1.2rem;}
 .teach_plan .plan2 .cont_with .left p{font-size: 0.28rem;}
 .teach_plan .plan2 .cont_with .right {background: url("./../../src/images/teach_plan/plan2.jpg") no-repeat center center;background-size: cover;}
 

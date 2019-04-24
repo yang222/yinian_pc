@@ -337,7 +337,7 @@ body {
 .index .cont p{font-size: 0.42rem;color: #fff;padding-left: 0.8rem;padding-top: 0.3rem;}
 .index .index1{background: url("./../images/index/bg2.jpg") no-repeat center center;background-size: cover;height: 100%;width: 100%;position: relative;}
 .index .index1 .index_cont{text-align: left;padding-left: 0.6rem; width: 8.5rem;height: 3.5rem;position: absolute; background: rgba(255, 255, 255, 0.5);top: 50%;right: 10%; margin-top: -1.75rem;}
-.index .index1 .index_cont h5{font-size: 0.46rem;font-weight: 0;padding: 1rem 0 0.2rem;font-weight: 600}
+.index .index1 .index_cont h5{font-size: 0.46rem;font-weight: 0;padding: 0.5rem 0 0.2rem;font-weight: 600}
 .index .index1 .index_cont p{font-size: 0.32rem;color: #333}
 .index .index2{background-image:url("./../images/index/bg3.jpg")}
 .index .index2 .index_cont{left: 20%}
@@ -576,7 +576,7 @@ background: url("./../images/index/box.png") no-repeat center center;background-
 .ed4 .ed4_1 .ed4_cont{width: 100%;height: 100%; background: rgba(255, 255, 255, 0.7)}
 .ed4 .ed4_2,.ed4 .ed4_3,.ed4 .ed4_1 {position: relative;}
 .ed4 .ed4_2 .ed4_text,.ed4 .ed4_3 .ed4_text,.ed4 .ed4_1 .ed4_text{position: absolute;top: 2.5%;left: 2.5%;width: 95%;height: 95%;background: rgba(255,255,255,0.7)}
-.ed4 .ed4_2 .ed4_text h5,.ed4 .ed4_3 .ed4_text h5,.ed4 .ed4_1 .ed4_text h5{font-size:0.5rem;padding: 3rem 0 1rem;color: #000}
+.ed4 .ed4_2 .ed4_text h5,.ed4 .ed4_3 .ed4_text h5,.ed4 .ed4_1 .ed4_text h5{font-size:0.46rem;padding: 3rem 0 1rem;color: #000}
 .ed4 .ed4_2 .ed4_text p,.ed4 .ed4_3 .ed4_text p,.ed4 .ed4_1 .ed4_text p{font-size:0.3rem;padding:0 0.5rem;color: #000}
 .ed4 .ed4_1 h3 {
     padding: 3rem 0 1rem;
@@ -1340,7 +1340,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .mercury .mercury4 .img img{width: 100%;}
 .mercury .mercury4 .img .cont{position: absolute;top: 2.5%;left: 2.5%;width: 95%;height: 94%;background: rgba(255, 255, 255, 0.5)}
 .mercury .mercury4 .img .cont h5{padding:2rem 0 1rem;font-size: 0.4rem;font-weight: 600;}
-.mercury .mercury4 .img .cont p{font-size: 0.32rem;padding: 0 0.3rem;}
+.mercury .mercury4 .img .cont p{font-size: 0.32rem;padding: 0 0.3rem;line-height: 0.8rem;}
 .mercury .mercury5{text-align: center;}
 .mercury .mercury5{background-image: url("./../images/mercury/mercury_bg2.jpg")}
 .mercury .mercury5 .ed1_txt h4{padding:0;text-align: center;padding-top: 3rem;margin-bottom: 0.2rem;}
@@ -1531,7 +1531,7 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .psyche .psyche11 .cont_with ul li{display: inline-block;width: 45%;margin:0 0.4rem;position: relative; height: 5rem; cursor: pointer; margin-bottom: 0.4rem;overflow: hidden;}
 .psyche .psyche11 .cont_with ul li .file_cont h6{font-weight: 600;font-size: 0.28rem;}
 .psyche .psyche11 .cont_with ul li img{width: 100%;height: 100%;}
-.psyche .psyche11 .cont_with ul li .file_cont{transition: all 0.5s; position: absolute;bottom: -1.8rem; left: 0;width: 100%;height:1.8rem;box-sizing: border-box;padding: 0.1rem 0.2rem;font-size: 0.26rem;color:#fff;text-align: center;background: rgba(0, 0, 0, 0.7);}
+.psyche .psyche11 .cont_with ul li .file_cont{transition: all 0.5s; position: absolute;bottom: -1.5rem; left: 0;width: 100%;height:1.5rem;box-sizing: border-box;padding: 0.1rem 0.2rem;font-size: 0.26rem;color:#fff;text-align: center;background: rgba(0, 0, 0, 0.7);}
 .psyche .psyche11 .cont_with ul li:hover .file_cont{bottom: 0rem;}
 @media (max-width: 800px){
     .psyche .psyche1 .ed1_txt{width: 100%;left: 50%;transform: translate(-50%,-50%)}
@@ -1758,8 +1758,8 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
     background: url("./../images/english/bg.jpg") no-repeat center center;background-size: cover;vertical-align: top;
 }
 .english .english2 .english2_cont div:first-child{margin-right: 5%}
-.english .english2 .english2_cont h6{font-size: 0.34rem;font-weight: 600;margin-bottom: 0.3rem;}
-.english .english2 .english2_cont p{font-size: 0.24rem;text-align: left;height: 2.5rem;}
+.english .english2 .english2_cont h6{font-size: 0.34rem;font-weight: 600;margin-bottom: 0.3rem; }
+.english .english2 .english2_cont p{font-size: 0.24rem;text-align: left;height: 2.5rem;line-height: 0.8rem;}
 .english .english3{padding: 1rem 0;background: url("./../images/english/eng2.jpg") no-repeat center center;background-size: cover;}
 .english .english3 h5{color: #fff}
 .english .english3 .line{background: #fff;}
