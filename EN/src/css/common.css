@@ -1737,33 +1737,77 @@ line-height: 0.6rem;font-size: 0.26rem;text-align: left;}
 .company_into .company_top{
     height: 12rem;background: url("./../images/company_inro/company4.jpg") no-repeat center center;background-size: cover;position: relative;
 }
-.company_into .company_top .top_cont{width: 60%; padding:1.5rem 1rem;background: rgba(0, 0, 0, 0.7);position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);color: #fff;}
+.company_into .company_top .top_cont{padding:1.5rem 1rem; background: rgba(0, 0, 0, 0.7);position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);color: #fff;}
 .company_into .com_tit{margin-bottom:0.5rem;display: inline-block;font-size: 0.56rem;font-weight: 600;padding: 0.3rem 1rem;border-bottom: 1px solid #fff;}
-.company_into .company_top .top_cont p{font-size: 0.26rem;margin-top: 0.2rem;}
+.company_into .company_top .top_cont p{font-size: 0.26rem;margin-top: 0.2rem;text-align:left;text-indent: 0.52rem;}
 .company_into .company_top img{position: absolute;bottom: -0.5rem;left: 50%;transform: translateX(-50%);width: 1rem; height: 1rem;}
 .company_into .company_into1{padding: 1rem 0;}
-.company_into .company_into1 .com_tit{border-color: #000;}
+.company_into  .com_tit{border-color: #000;}
 .company_into .company_into1 ul{font-size: 0}
-.company_into .company_into1 ul li{display: inline-block;width:21%;margin: 0 1.5%;box-shadow: 0 0 10px 0px #000;overflow: hidden;}
+.company_into .company_into1 ul li{display: inline-block;width:30%;margin: 0 1.5%;box-shadow: 0 0 10px 0px #999;overflow: hidden;}
 .company_into .company_into1 ul li img{width: 100%;}
-.company_into .company_into1 ul li h6{height: 1.2rem;background: #2b2a30;font-size: 0.4rem;color: #fff;font-weight: 600;line-height: 1.2rem;}
-.company_into .company_into1 ul li p{height:4rem;padding: 0.3rem;box-sizing: border-box;font-size: 0.26rem;color: #999999;text-align: left;}
-.company_into .company_into2{background: #292929;padding: 1rem 0;}
-.company_into .company_into2 h5{font-size: 0.56rem;color: #fff;font-weight: 600;margin-bottom: 0.5rem;}
-.company_into .company_into2 p{font-size: 0.3rem;color: #fff;line-height: 0.8rem;margin-bottom: 1rem;padding:0 0.5rem;}
+.company_into .company_into1 ul li h6{height: 1.2rem;background: #2b2a30;font-size: 0.44rem;color: #fff;font-weight: 600;line-height: 1.2rem;}
+.company_into .company_into1 ul li p{height:4rem;padding: 0.3rem;box-sizing: border-box;font-size: 0.26rem;color: #999999;text-align: left;line-height: 0.4rem;}
+.company_into .company_into2{padding: 1rem 0;}
+.company_into .company_into2 .com_tit{
+    margin-bottom: 2rem;
+}
+.company_into .company_into2 ul{font-size: 0;}
+.company_into .company_into2 ul.ul_first li{margin:0 3% 2rem;width: 25;}
+.company_into .company_into2 ul li{box-shadow: 0 0 3px 3px #ddd; padding-bottom: 0.5rem;display: inline-block;vertical-align: top;width: 23%;margin:0 1% 2rem;position: relative;border: 1px solid #aaa;padding-top: 3.5rem;box-sizing: border-box;}
+.company_into .company_into2 ul li .p_img{position: absolute;height: 4rem; width: 3rem;border-radius: 50% / 50%;background: #000;top:-1rem;left: 50%;margin-left: -1.5rem;}
+.company_into .company_into2 ul li .p_img img{height: 4rem; width: 3rem;border-radius: 50% / 50%;}
+.company_into .company_into2 ul li h6{color: #000;font-size: 0.34rem;font-weight: 0;height: 0.8rem;}
+.company_into .company_into2 li h5{font-size: 0.32rem;color: #0982b9;font-weight: 0;margin: 0.2rem 0;}
+.company_into .company_into2 p{font-size: 0.24rem;color: #333;line-height: 0.4rem;padding:0 0.3rem;height: 5rem;text-align: left;text-indent: 0.48rem;text-align:justify; text-justify:inter-ideograph;}
 .company_into .company_into2 img{width: 75%;}
 .company_into .company_into3{padding: 1rem 0 0;font-size: 0;}
 .company_into .company_into3 .com_tit{border-color: #000;}
 .company_into .company_into3 p{font-size: 0.3rem;line-height: 0.6rem;margin-bottom: 1rem;padding:0 0.5rem;}
 .company_into .company_into3 p span{font-weight: 600;}
 .company_into .company_into3 img{width: 85%;}
+.company_into .company_into4{
+    padding: 2rem 0;
+    background: #333;
+}
+.company_into .company_into4 .into4_cont{
+    position: relative;
+    padding: 1.5rem;
+    width: 800px;
+    margin:  0 auto;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.company_into .company_into4 .into4_cont h5{
+    font-size: 0.46rem;
+    position: absolute;
+    height: 1rem;
+    width: 600px;
+    line-height: 1rem;
+    padding: 0 0.2rem;
+    background: #333;
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.company_into .company_into4 .into4_cont p{
+    font-size: 0.26rem;
+    margin-bottom: 0.3rem;
+}
 @media (max-width: 700px){
-    .company_into .company_top {height: 18rem;}
     .company_into .company_top .top_cont{width: 90%;}
-    .company_into .company_into1 ul li{width: 90%;margin-bottom: 0.5rem;}
-    .company_into .company_into1 ul li p{height: 5rem;}
+    .company_into .company_top{height: 23rem;}
+    /* .company_into .company_into1 ul{text-align: left;} */
+    .company_into .company_into1 ul li{width: 80%;margin-bottom: 0.5rem;}
+    .company_into .company_into1 ul li p{height:5.5rem;line-height: 0.6rem;}
+    .company_into .com_tit{font-size: 0.7rem;}
     .company_into .company_into3 p{line-height: 1rem;}
     .company_into .company_into2 p{line-height: 1rem;}
+    .company_into .company_into2 ul li{width: 90%;}
+    .company_into .company_into2 ul li p{font-size: 0.2rem;height:auto;padding: 0 0.5rem;}
+    .company_into .company_into2 ul li h6{font-size: 0.7rem;}
+    /* .company_into .company_into4 .into4_cont h5{font-size: 0.7rem;}/ */
+    .company_into .company_into4 .into4_cont{width: 80%;box-sizing: border-box;}
 }
 
 /* //顶尖少儿在线英语 */
