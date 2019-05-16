@@ -13,6 +13,7 @@
     <script src="../src/js/common.js"></script>
     <link rel="stylesheet" href="./../src/css/normal.css">
     <link rel="stylesheet" href="./../src/css/common.css">
+    <link href="./favicon.ico" rel="SHORTCUT ICON">
 </head>
 <body>
     <div class="header">
@@ -171,7 +172,12 @@ $(function(){
                         $("#yn_news").html('')
                         var html = '<h5><span class="jt"></span>易念新闻 <ul>'
                         for(var i=0;i<data.data.length;i++){
-                            html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].title+'</a></li>'
+                            if(data.data[i].cn_url){
+                                html+= '<li><a href="'+data.data[i].cn_url+'" target="_bank">'+data.data[i].title+'</a></li>'
+                            }else{
+                                html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].title+'</a></li>'
+                            }
+                           
                         }
                         html+='</ul></h5>'
                         $("#yn_news").html(html)
@@ -179,7 +185,11 @@ $(function(){
                         $("#hy_news").html('')
                         var html = '<h5><span class="jt"></span>行业新闻 <ul>'
                         for(var i=0;i<data.data.length;i++){
-                            html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].title+'</a></li>'
+                            if(data.data[i].cn_url){
+                                html+= '<li><a href="'+data.data[i].cn_url+'" target="_bank">'+data.data[i].title+'</a></li>'
+                            }else{
+                                html+= '<li><a href="./news_cont.html?id='+data.data[i].id+'&type='+type+'">'+data.data[i].title+'</a></li>'
+                            }
                         }
                         html+='</ul></h5>'
                         $("#hy_news").html(html)

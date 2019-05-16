@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./../src/css/animate.min.css">
     <link rel="stylesheet" href="./../src/css/normal.css">
     <link rel="stylesheet" href="./../src/css/common.css">
+    <link href="./favicon.ico" rel="SHORTCUT ICON">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
     <style>
     .swiper-container1{width: 100%;height: 100%;position: relative;box-sizing: border-box;padding-top: 2rem;}
@@ -158,7 +159,7 @@
             <h5 class="title ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s">媒体资讯</h5>
             <p class="text ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0s">NEWS AND EVENTS</p>
             <ul id="datalist">
-                <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                <!-- <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s">
                     <div class="conts">
                         <div class="news_tit">
                             <h5 class="color">MEDIA  INFORMATION</h5>
@@ -233,7 +234,7 @@
                         </div>
                         <a href="javascritpt:;" class="detail">查看详情</a>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
         <div class="foot">
@@ -464,8 +465,13 @@
                                 var html = '<li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="'+(1+0.3*i)+'s">'+
                                     '<div class="gb"></div><div class="conts"><div class="news_tit">'+
                                     '<h5 class="color">MEDIA  INFORMATION</h5><h4>'+data.data[i].e_title+'</h4><span class="color">'+data.data[i].date+'</span>'+
-                                    '</div><div class="news_cont"><p>'+data.data[i].e_about+'</p>'+
-                                    '</div><a href="./news_cont.html?id='+data.data[i].id+'&type='+data.data[i].type+'" class="detail">DETAILS</a></div></li>'
+                                    '</div><div class="news_cont"><p>'+data.data[i].e_about+'</p>'
+                                    if(data.data[i].en_url){
+                                        html+= '</div><a href="'+data.data[i].en_url+'" class="detail">DETAILS</a></div></li>'
+                                    }else{
+                                        html+= '</div><a href="./news_cont.html?id='+data.data[i].id+'&type='+data.data[i].type+'" class="detail">DETAILS</a></div></li>'
+                                    }
+                                   
                                 $("#datalist").append(html)
                             }
                         }else{
